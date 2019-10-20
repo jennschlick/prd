@@ -1,0 +1,619 @@
+/*-----------------------------------------------------------------------------------*/
+/* Legacy styles
+/*-----------------------------------------------------------------------------------*/
+
+/* See sections on these line numbers -> 228, 251, 259, 272, 284 */
+
+img {
+	height: auto;
+}
+
+.fixwidth {
+	position: relative;
+	margin: 0 auto;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+.logo {
+	display: block;
+	width: 70px;
+	height: 70px;
+	float: left;
+	background: url('../img/logo.png');
+	margin: 20px 0 10px;
+}
+
+.slogan {
+	margin-top: 79px;
+	color: $graydark;
+	font-size: 13px;
+	text-transform: uppercase;
+	float: left;
+	letter-spacing: 0.2pt;
+	/*font-weight: 600;*/
+	font-weight: 400;
+}
+
+.slogan span {
+	padding-left: 14px;
+}
+
+.header {
+	position: relative;
+	z-index: 120;
+}
+
+.main_menu {
+	clear: both;
+	height: 30px;
+	line-height: 28px;
+	background: $orange;
+	text-align: right;
+	margin-bottom: 4px;
+	letter-spacing: 0.2pt;
+}
+
+.main_menu {
+	display: block !important;
+}
+
+.main_menu li {
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+}
+
+.main_menu li a {
+	color: $graylight;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main_menu li a.active {
+	/* color:#e6e6e6;*/
+	/*color:$graylight;*/
+	color: $white;
+}
+
+.contact_link {
+	width: 12%;
+}
+
+.portfolio_link {
+	/*width:19%; w update 9/11/14 */
+	width: 16%;
+}
+
+.about_link {
+	/*width:18%;  w update 9/11/14 */
+	width: 16%;
+}
+
+.slider_content {
+	width: 100%;
+	position: relative;
+}
+
+.slider_grid {
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 100;
+}
+
+.hline,
+.vline {
+	position: absolute;
+	background: $white;
+	opacity: 0.4;
+}
+
+.vline {
+	top: 0;
+	bottom: 0;
+	width: 1px;
+}
+
+.hline {
+	left: 0;
+	height: 1px;
+	right: 0;
+}
+
+.bx-next,
+.bx-prev {
+	overflow: hidden;
+	text-indent: -999px;
+	position: absolute;
+	bottom: 15px;
+	width: 24px;
+	height: 23px;
+	cursor: pointer;
+	z-index: 110;
+}
+
+.front .bx-next,
+.front .bx-prev {
+	display: none;
+}
+
+.bx-prev {
+	left: 22px;
+	background: url('../img/prev.png') top;
+}
+
+.bx-next {
+	right: 22px;
+	background: url('../img/next.png') top;
+}
+
+.footer {
+	font-size: 11px;
+	color: $graymedium;
+	text-align: right;
+	padding: 0 0 0 20px;
+	line-height: 25px;
+	/* margin-top:4px; */
+	letter-spacing: 0.2pt;
+}
+
+.page-portfolio .footer {
+	margin-top: 3px;
+}
+
+.front .footer {
+	margin-top: 4px;
+	border-top: 30px solid $orange;
+}
+
+.page-portfolio .footer {
+	border-top: 224px solid $orange;
+}
+
+#menu_button {
+	display: none;
+}
+
+.bx-wrapper {
+	position: relative;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	width: 100%;
+	display: block;
+}
+
+.project .bx-wrapper img {
+	display: inline;
+	width: 50%;
+}
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url('../img/bx_loader.gif') center center no-repeat $white;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+.portfolio {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio .item {
+	position: relative;
+	overflow: hidden;
+	border-right: 1px solid $white;
+	border-bottom: 1px solid $white;
+	float: left;
+}
+
+.portfolio .item.last {
+	border-right: 0;
+}
+
+.portfolio .item a {
+	display: block;
+	text-decoration: none;
+}
+
+.portfolio .item img {
+	width: 100%;
+}
+
+.portfolio .item span {
+	/* the port page text*/
+	display: block;
+	position: absolute;
+	z-index: 100;
+	right: 0;
+	background: url('../img/black_a7.png');
+	color: $graylight;
+	padding: 10px 5%;
+	line-height: 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 11px;
+	text-transform: uppercase;
+	width: 90%;
+}
+
+.contacts,
+.project {
+	background: $graylightest;
+}
+/*     COLUMNS WIDTH & SPACING     */
+.col1,
+.col2 {
+	/*padding:30px 4% 24px 4%;padding-left:12%;  */
+	/*width:42%;*/
+	padding-top: 30px;
+	/*padding-bottom: 20px;*/
+	width: 35.5%;
+	float: left;
+	/*background-color:#f60;*/
+}
+
+.col1 {
+	padding-left: 13%;
+	padding-right: 3.5%;
+	/*background-color:#c0c0c0;*/
+}
+
+.col3,
+.col4 {
+	/*padding:30px 4% 24px 4%;padding-left:12%;  */
+	/*width:42%;*/
+	padding-top: 30px;
+	/*padding-bottom: 20px;*/
+	min-height: 194px;
+	float: left;
+	/*background-color:#f60;*/
+}
+
+.col3 {
+	padding-left: 6%;
+	padding-right: 1.5%;
+	width: 30.5%;
+}
+
+.col4 {
+	width: 40%;
+}
+
+.col5 {
+	float: left;
+	width: 1%;
+}
+/*   PROJECT HEADERS     */
+.content h1 {
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 25px;
+	color: $orange;
+	padding-bottom: 5px;
+	/* need frutiger font */
+	/* this doesnt work -> font-family:Frutiger, "Frutiger Linotype";*/
+}
+
+.content blockquote {
+	color: $graymedium;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+.content blockquote p {
+	margin-bottom: 0;
+	font-family: Helvetica, sans-serif;
+	font-style: oblique;
+}
+/*.col1 h1, .col1 .field-item blockquote, .col1 .field-label, .col1 .field-items .field-item{
+	background-color:#f60;
+}*/
+/*     MAIN CONTENT FONT SIZE */
+.content {
+	font-size: 13.5px;
+	color: $graymedium; /* added as was field items below - remove both for darker fonts -> */
+	/*font-weight: 300;*/
+}
+/*     LINE HEIGHT FOR Paragraphs   */
+.content p {
+	line-height: 20px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.field {
+	line-height: 15px;
+	padding-bottom: 7px;
+}
+/*     PROEJECTS INFO Lables */
+.cf {}
+
+.field-label {
+	color: $graymedium;
+	font-weight: 600;
+	display: inline;
+	font-family: Helvetica LT STD Roman, sans-serif;
+}
+
+.field-label-inline .field-label {
+	float: left;
+}
+/* PROEJCTS INFO data    */
+.field-items {
+	/*font-weight: 300;*/
+	/* this is weight for about us sections */
+	display: inline;
+}
+
+.about {
+	background: $graylightest;
+}
+
+.content_header {
+	position: relative;
+	margin-bottom: 4px;
+	background: $graylightest;
+}
+
+.content_header_img {
+	display: table-cell;
+	background: $white;
+	width: 50%;
+}
+
+.content_header_img img {
+	width: 100%;
+}
+
+.content_header_text {
+	display: table-cell;
+	/* use these others for text when necessary */
+	/*font-size: 19px;*/
+	width: 100%;
+	height: 100%;
+	/*line-height: 28px;
+	vertical-align: middle;
+	padding:0 6%;*/
+	// background: url('http://prd.metrohosting.net/sites/all/themes/frontend/images/ift2.png') center center no-repeat;
+	color: $orange;
+}
+
+.content_header_text strong {
+	color: $bluedark;
+}
+
+.tabs_content .tab {
+	display: none;
+}
+
+.tabs_content .tab.first_tab {
+	display: block;
+}
+
+.tabs_navigation {
+	padding: 30px 0 0 4%;
+	margin-bottom: -10px;
+}
+
+.tabs_navigation a {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $orange;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+.tabs_navigation a.active {
+	/*color:$bluedark;*/
+	color: $bluemedium;
+}
+/*.portfolio .item_17 span,*/
+.portfolio .item_16 span {
+	display: none;
+}
+
+.content_header_img .field {
+	padding-bottom: 0;
+}
+
+.webform-client-form .form-text,
+.webform-client-form .form-textarea {
+	width: 98%;
+	padding: 3px 1%;
+	border: 1px solid $graylight;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: Helvetica, sans-serif;
+	resize: none;
+}
+
+.webform-client-form .form-text {
+	margin: 0 !important;
+}
+
+.webform-client-form .form-text.error,
+.webform-client-form .form-textarea.error {
+	border: 1px solid $red;
+}
+
+.form-submit {
+	padding: 5px 15px;
+	color: $white;
+	background: $orange;
+	border: 0;
+	margin-top: 1px;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.form-item {
+	position: relative;
+	padding-bottom: 9px;
+}
+
+#map-canvas {
+	/*height: 250px;*/
+	/*height:150px;*/
+}
+
+.slide_sep {
+	position: absolute;
+	width: 4px;
+	background: $white;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	margin-left: -2px;
+	z-index: 1;
+}
+
+.slide_map {
+	position: absolute;
+	width: 4px;
+	background: $white;
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	margin-left: -2px;
+	z-index: 1;
+}
+
+.content blockquote p {
+	padding-bottom: 0;
+}
+
+.portfolio_wrapper {
+	overflow: hidden;
+}
+
+.portfolio {
+	width: 1000%;
+}
+
+.item_11 {
+	clear: left;
+}
+
+.project .bx-wrapper {
+	border-bottom: 4px solid $white;
+}
+
+.contacts_wrapper {
+	position: relative;
+}
+/*
+.map_wrapper{
+	float:left;
+	width:50%;
+
+
+}*/
+.contacts_wrapper .body {
+	float: left;
+	padding: 30px 4%;
+}
+
+.contacts_wrapper {
+	border-bottom: 4px solid $white;
+}
+
+.webform-client-form .form-textarea {
+	/*height: 51px !important;*/
+	height: 31px !important;
+}
+
+.bx-pager {
+	position: absolute;
+	right: 70px;
+	z-index: 200;
+	bottom: 20px;
+}
+
+.bx-pager-item {
+	display: inline-block;
+	padding-left: 12px;
+}
+
+.bx-pager-item a {
+	display: block;
+	width: 13px;
+	height: 12px;
+	text-indent: -9999px;
+	overflow: hidden;
+	opacity: 0.5;
+	background: url('../img/bull.png') top;
+}
+
+.bx-pager-item a.active,
+.bx-pager-item a:hover {
+	opacity: 1;
+}
+
+.slider_wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.about,
+.project .content {
+	min-height: 226px;
+}
+
+.contacts {
+	min-height: 224px;
+}
+
+.field-name-field-project-summary p {
+	margin-bottom: 0;
+}
+
+.bx-prev.disabled {
+	display: none !important;
+}
+
+.bx-next.disabled {
+	width: 36px;
+	height: 15px;
+	background: url('../img/slider_grid.png');
+	right: 18px;
+	bottom: 20px;
+}
+/* w oct 22 */
+#bc a {
+	text-decoration: none;
+	color: $graymedium;
+}
+
+#bc a:hover {
+	color: $orange;
+}
+
+#map-canvas {
+	/*height: 200px !important;*/
+	height: 415px !important;
+}
+
+.map_wrapper {
+	width: 100%;
+	float: none;
+}
+/*
+	#contact_info{
+		float:left;
+		width:100px;
+		min-height:224px;*/
+/* used now only on full */
+/*}*/
