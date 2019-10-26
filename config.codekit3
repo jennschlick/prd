@@ -27,6 +27,22 @@
 		"oAP": "/css/styles.css.map",
 		"oF": 0
 		},
+	"/fields/group_5db42f5ea6257.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/fields/group_5db42f5ea6257-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/fields/group_5db443af3be37.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/fields/group_5db443af3be37-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -41,6 +57,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/functions.php",
+		"oF": 0
+		},
+	"/functions/admin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/functions/admin.php",
 		"oF": 0
 		},
 	"/functions/advanced-custom-fields.php": {
@@ -91,6 +115,17 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/img/bar2.png": {
+		"ft": 32768,
+		"iS": 17935,
+		"oA": 0,
+		"oAP": "/img/bar2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/black_a7.png": {
 		"ft": 32768,
 		"iS": 921,
@@ -113,6 +148,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/bull9.png": {
+		"ft": 32768,
+		"iS": 15422,
+		"oA": 0,
+		"oAP": "/img/bull9.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/bx_loader.gif": {
 		"ft": 4194304,
 		"iS": 8581,
@@ -123,9 +169,20 @@
 		},
 	"/img/logo.png": {
 		"ft": 32768,
-		"iS": 2744,
+		"iS": 11546,
 		"oA": 0,
 		"oAP": "/img/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/menu_button.png": {
+		"ft": 32768,
+		"iS": 1300,
+		"oA": 0,
+		"oAP": "/img/menu_button.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -143,6 +200,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/next15.png": {
+		"ft": 32768,
+		"iS": 15578,
+		"oA": 0,
+		"oAP": "/img/next15.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/prev.png": {
 		"ft": 32768,
 		"iS": 1308,
@@ -154,11 +222,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/prev15.png": {
+		"ft": 32768,
+		"iS": 15567,
+		"oA": 0,
+		"oAP": "/img/prev15.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/slider_grid.png": {
 		"ft": 32768,
 		"iS": 957,
 		"oA": 0,
 		"oAP": "/img/slider_grid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/slider_grid28.png": {
+		"ft": 32768,
+		"iS": 15580,
+		"oA": 0,
+		"oAP": "/img/slider_grid28.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -206,12 +296,28 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/page-homepage.php": {
+	"/page-11.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-homepage.php",
+		"oAP": "/page-11.php",
+		"oF": 0
+		},
+	"/page-15.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-15.php",
+		"oF": 0
+		},
+	"/page-5.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-5.php",
 		"oF": 0
 		},
 	"/page.php": {
@@ -268,6 +374,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/partials/_mediaqueries.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/partials/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/partials/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
