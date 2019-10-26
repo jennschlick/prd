@@ -49,6 +49,21 @@
 			}
 		);
 
+		$('.content_header_img_front').hover(
+			function(){
+				$('span', this).stop().animate({marginTop: -$('span', this).height()-20}, 'fast');
+			}, function(){
+				$('span', this).stop().animate({marginTop: 0}, 100);
+			}
+		);
+
+		$('.content_header_img_front').click(function() {
+      $(this).next('.content_header_img_back').toggle();
+    });
+
+		$('.content_header_img_back').click(function() {
+      $(this).toggle();
+    });
 
 		$('.tabs_navigation a').click(function(event) {
 			$('.tabs_content .tab').hide();
@@ -62,12 +77,7 @@
 			$('#'+$(this).attr('for')).attr('placeholder', $(this).text());
 		}).hide();
 
-
-
-
-
 		$(window).resize();
-
 
 	});
 
