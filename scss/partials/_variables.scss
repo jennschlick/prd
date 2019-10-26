@@ -2,16 +2,23 @@
 /* Variables
 /*-----------------------------------------------------------------------------------*/
 
-/*-----------------------------------------------------------------------------------*/
-/* Colors
-/*-----------------------------------------------------------------------------------*/
-
+// Colors
 $bluedark:              #0070ff;
 $bluemedium:            #0082c8;
 $graydark:              #252525;
 $graylight:             #ebebeb;
 $graylightest:          #f0f0f0;
+$graylightmedium:       #c0c0c0;
 $graymedium:            #404347;
-$orange:                #ef7023;
+$orange:                #e38936;
+$orangedark:            #ce7212;
 $red:                   #f00;
 $white:                 #ffffff;
+
+// Layout
+$spacer:                20px;
+
+// Typography
+$fontsize:              13.5px;
+$lineheight:            1.5;
+$headinglineheight:     1.2;

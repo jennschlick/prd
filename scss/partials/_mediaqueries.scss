@@ -2,7 +2,6 @@
 /* Media queries
 /*-----------------------------------------------------------------------------------*/
 
-/* more than 1006 */
 @media screen and (min-width: 1006px) {
 	.fixwidth {
 		max-width: 1244px;
@@ -22,77 +21,63 @@
 
 	#project-info {
 		margin-left: -60px;
-		/*background-color:#f0c;*/
 	}
-	/* spacing between sub menu items on ABOUT US*/
+
 	.link_tab_2 span,
 	.link_tab_3 span,
 	.link_tab_4 span {
-		/*margin-left:55px;*/
 		margin-left: 48px;
 	}
-	/* font size sub menu items */
+
 	.link_tab_1 span,
 	.link_tab_2 span,
 	.link_tab_3 span,
 	.link_tab_4 span {
 		font-size: 17px;
 	}
-	/* move submenu to the right */
-	.tabs_navigation {
-		/*margin-left:112px;	original spec
-	 */
-		/*margin-left:170px*/
-		/*background-color:#f0c;display: block; margin-left:auto; margin-right:auto;*/
-	}
 
 	.section {
 		margin-left: 65px;
-		/* move the entire lower section right */
 	}
 
 	#tot1 {
-		background: url("../images/bar2.png") 125.5px center repeat-y;
+		background: url('../img/bar2.png') 125.5px center repeat-y;
 	}
 
 	#tot2 {
-		background: url("../images/bar2.png") 134.5px center repeat-y;
+		background: url('../img/bar2.png') 134.5px center repeat-y;
 	}
 
 	#tot3 {
-		background: url("../images/bar2.png") 125.5px center repeat-y;
+		background: url('../img/bar2.png') 125.5px center repeat-y;
 	}
 
 	#tot3 #sub h3 {
 		margin-left: 30px;
 	}
-	/* each indiv lower section */
+
 	#push {
-		/* background-color:#f0c;*/
 		padding-left: 140px;
-		margin-top: -28px; /*margin-left:20px;*/
+		margin-top: -28px;
 		margin-left: 11px;
 	}
 
 	#tot2 #push {
 		padding-left: 150px;
 	}
-	/* headings */
+
 	#sub h3 {
 		margin-top: 6px;
 		font-size: 22px;
-		color: #c0c0c0;
+		color: $graylightmedium;
 	}
-	/* li fonts */
+
 	#push ul li {
 		font-size: 14px;
-		color: #404347;
+		color: $graymedium;
 		line-height: 1.5em;
 	}
-	/*
-#all #tot1{
-	 margin-left:25px;
-}*/
+
 	#all #tot2 {
 		margin-left: 23px;
 	}
@@ -100,16 +85,13 @@
 	#all #tot3 {
 		margin-left: 23px;
 	}
-	/*
-#all #tot2 #sub h3{
-		margin-left:10px;
-}*/
+
 	#mainsec {
 		margin-left: 25px;
 		width: 1154px;
 	}
 }
-/* smaller than 1040	*/
+
 @media screen and (max-width: 1040px) {
 	#mainsec {
 		width: 900px;
@@ -117,10 +99,9 @@
 
 	.section {
 		margin-left: 0;
-		/* move the entire lower section right */
 	}
 }
-/* smaller than 800 */
+
 @media screen and (max-width: 800px) {
 	.content_header_text {
 		font-size: 16px;
@@ -128,9 +109,7 @@
 		padding: 0 5%;
 	}
 }
-/************************************************************************************
-smaller than 960
-*************************************************************************************/
+
 @media screen and (max-width: 1006px) {
 	.fixwidth {
 		padding: 0 18px;
@@ -142,29 +121,27 @@ smaller than 960
 		bottom: 0;
 	}
 
-	.main_menu li {
+	#main_menu li {
 		width: 150px;
 	}
 
 	#mainsec {
 		width: 800px;
 	}
-	/* what we do */
-	/* each indiv lower section */
+
 	#push {
 		padding-left: 6px;
 		margin-left: 6px;
 	}
-	/* li fonts */
+
 	#push ul {
 		margin-top: 10px;
 	}
 
 	#push ul li {
-		background: url("../images/bar2.png") left center repeat-y;
-		/* */
+		background: url('../img/bar2.png') left center repeat-y;
 		font-size: 14px;
-		color: #404347;
+		color: $graymedium;
 		line-height: 1.5em;
 		padding-left: 20px;
 	}
@@ -177,13 +154,13 @@ smaller than 960
 		margin-left: -20px;
 		padding-bottom: 25px;
 	}
-	/* headings */
+
 	#sub h3 {
 		font-size: 22px;
-		color: #c0c0c0;
+		color: $graylightmedium;
 	}
 }
-/* iPads (landscape) */
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	#map-canvas {
 		height: 328px !important;
@@ -207,9 +184,7 @@ smaller than 960
 		padding-bottom: 4px;
 	}
 }
-/************************************************************************************
-between 480 and 768 -- ipad portrait
-*************************************************************************************/
+
 @media screen and (min-width: 480px) and (max-width: 768px) and (orientation : portrait) {
 	.desctop_row {
 		display: none;
@@ -229,7 +204,7 @@ between 480 and 768 -- ipad portrait
 	}
 
 	.page-portfolio .footer {
-		border-top: 187px solid #fd8a2a;
+		border-top: 187px solid $orange;
 	}
 
 	#map-canvas {
@@ -237,7 +212,6 @@ between 480 and 768 -- ipad portrait
 	}
 
 	#center-headings {
-		/*background-color:#fc0;*/
 		width: 580px;
 		display: block;
 		margin-left: auto;
@@ -246,25 +220,15 @@ between 480 and 768 -- ipad portrait
 
 	#mainsec {
 		width: 100%;
-		/*background-color:#f60;*/
 	}
 
-	.about,
 	.project .content {
-		/*min-height: 280px; <-- that is good for about us, but making greater to include project pages */
-		min-height: 340px;
-	}
-
-	.content {
-		/*min-height:280px;  <- same for maps page */
 		min-height: 340px;
 	}
 }
-/************************************************************************************
-smaller than 650
-*************************************************************************************/
+
 @media screen and (max-width: 650px) {
-	.main_menu li {
+	#main_menu li {
 		width: 130px;
 	}
 
@@ -277,6 +241,39 @@ smaller than 650
 		display: block;
 		padding-right: 0;
 		width: auto;
+
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-bottom: 4px solid $white;
+		}
+
+		&:nth-child(2) {
+
+			.content_header_img_back {
+				padding-left: ($spacer);
+				padding-right: ($spacer);
+			}
+
+			.content_header_img_back_inner {
+				> div {
+
+					ul {
+						margin-bottom: ($spacer);
+						padding: 0 !important;
+						width: 50% !important;
+
+						&:last-of-type {
+							margin: 0;
+							width: auto !important;
+						}
+
+						li {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.content_header_text {
@@ -300,7 +297,7 @@ smaller than 650
 	.tabs_navigation a span {
 		display: block;
 		line-height: 45px;
-		border: 2px solid #fff;
+		border: 2px solid $white;
 		padding-left: 18px;
 	}
 
@@ -338,16 +335,7 @@ smaller than 650
 		display: none;
 	}
 }
-/* Smartphones (landscape) */
-@media only screen and (min-width : 321px) {
-	/* Styles */
-	#lt #content p {
-		/*color:green;*/
-	}
-}
-/************************************************************************************
-smaller than 480
-*************************************************************************************/
+
 @media screen and (max-width: 480px) {
 	.about,
 	.content_header {
@@ -372,8 +360,8 @@ smaller than 480
 		min-width: 284px;
 	}
 
-	.front .footer {
-		border-top: 10px solid #fd8a2a;
+	body.home .footer {
+		border-top: 10px solid $orange;
 	}
 
 	.page-portfolio .footer {
@@ -397,13 +385,12 @@ smaller than 480
 	}
 
 	.slogan {
-		clear: both; /*font-size: 16px;*/
+		clear: both;
 		font-size: 12px;
-		/*margin:0 0 16px 0px;*/
 		margin: -21px 0 16px 68px;
 	}
 
-	.main_menu {
+	#main_menu {
 		display: none;
 		position: absolute;
 		right: 0;
@@ -413,29 +400,29 @@ smaller than 480
 		height: auto;
 	}
 
-	.main_menu.closed {
+	#main_menu.closed {
 		display: none !important;
 	}
 
-	.main_menu li {
+	#main_menu li {
 		padding: 0;
 		display: block;
-		border-bottom: 1px solid #ff9b47;
+		border-bottom: 1px solid $orange;
 	}
 
-	.main_menu li a {
+	#main_menu li a {
 		display: block;
 		font-size: 13px;
 		line-height: 36px;
 		padding: 0 0 0 25px;
 	}
 
-	.main_menu li.last {
+	#main_menu li:last-child {
 		border: 0;
 	}
 
-	.main_menu li a:active {
-		background: #de6f08;
+	#main_menu li a:active {
+		background: $orange;
 	}
 
 	#menu_button {
@@ -445,7 +432,7 @@ smaller than 480
 		display: block;
 		right: 0;
 		top: 20px;
-		background: url("../images/menu_button.png") no-repeat top;
+		background: url('../img/menu_button.png') no-repeat top;
 	}
 
 	#menu_button.open {
@@ -463,9 +450,9 @@ smaller than 480
 	.portfolio .item_16,
 	.portfolio .item_17 {
 		text-align: center;
-		background: #f0f0f0;
+		background: $graylightest;
 	}
-	/*.portfolio .item_17,*/
+
 	.portfolio .item_16 {
 		display: none;
 	}
@@ -500,7 +487,7 @@ smaller than 480
 		padding: 0 18px 30px;
 	}
 
-	.main_menu li {
+	#main_menu li {
 		width: auto;
 	}
 
@@ -509,97 +496,156 @@ smaller than 480
 		overflow: hidden;
 		text-indent: -999px;
 		position: absolute;
-		bottom: 15px; /*width:24px;*/
-		width: 14px; /*height: 23px;*/
+		bottom: 15px;
+		width: 14px;
 		height: 14px;
 		cursor: pointer;
 		z-index: 110;
 	}
 
-	.front .bx-next,
-	.front .bx-prev {
+	body.home .bx-next,
+	body.home .bx-prev {
 		display: none;
 	}
 
 	.bx-prev {
 		left: 22px;
-		background: url("../images/prev15.png") top;
+		background: url('../img/prev15.png') top;
 	}
 
 	.bx-next {
 		right: 22px;
-		background: url("../images/next15.png") top;
+		background: url('../img/next15.png') top;
 	}
 
 	.bx-pager {
 		position: absolute;
 		right: 70px;
-		z-index: 200; /*bottom:20px;*/
+		z-index: 200;
 		bottom: 16px;
 	}
 
 	.bx-pager-item a {
-		display: block; /*width:13px;*/
-		width: 9px; /*height: 12px;*/
+		display: block;
+		width: 9px;
 		height: 8px;
 		text-indent: -9999px;
 		overflow: hidden;
 		opacity: 0.5;
-		background: url("../images/bull9.png") top;
+		background: url('../img/bull9.png') top;
 	}
 
 	.bx-next.disabled {
-		/*width:36px;*/
-		width: 28px; /*height: 15px;*/
+		width: 28px;
 		height: 12px;
-		background: url("../images/slider_grid28.png");
-		right: 18px; /*bottom:20px;*/
+		background: url('../img/slider_grid28.png');
+		right: 18px;
 		bottom: 16px;
 	}
 
-	#contact_info {
-		/*float:left;
-		width:100px;*/
-		/*min-height:224px;  dont force space for mobile*/
-		min-height: 20px;
-	}
-
 	#formside {
-		background-color: #f60;
+		background-color: $orange;
 		margin-top: 166px;
 	}
-	/* what we do */
-	/* each indiv lower section */
+
 	#push {
 		padding-left: 6px;
 		margin-left: 6px;
 	}
-	/* li fonts */
+
 	#push ul {
 		margin-top: 10px;
 	}
 
 	#push ul li {
-		background: url("../images/bar2.png") left center repeat-y;
-		/* */
+		background: url('../img/bar2.png') left center repeat-y;
 		font-size: 14px;
-		color: #404347;
+		color: $graymedium;
 		line-height: 1.5em;
 		padding-left: 20px;
 	}
 
 	#mainsec {
 		padding-bottom: 25px;
-		/*margin-left:-64px;*/
 	}
 
 	.section {
 		margin-left: -20px;
 		padding-bottom: 25px;
 	}
-	/* headings */
+
 	#sub h3 {
 		font-size: 22px;
-		color: #c0c0c0;
+		color: $graylightmedium;
+	}
+}
+
+body.page-id-11 {
+	.section {
+		clear: both;
+		padding: 0;
+		margin: 25px 0 0 82px;
+	}
+
+	.col {
+		display: block;
+		float: left;
+		margin: 1% 0 1% 1.6%;
+	}
+
+	.col:first-child {
+		margin-left: 0;
+	}
+
+	.group:after,
+	.group:before {
+		content: "";
+		display: table;
+	}
+
+	.group:after {
+		clear: both;
+	}
+
+	.group {
+		zoom: 1;
+	}
+
+	.span_3_of_3 {
+		width: 100%;
+	}
+
+	.span_2_of_3 {
+		width: 66.13%;
+	}
+
+	.span_1_of_3 {
+		width: 32.26%;
+	}
+
+	@media only screen and (max-width: 680px) {
+		.col {
+			margin: 1% 0;
+		}
+	}
+
+	@media only screen and (max-width: 680px) {
+		.span_3_of_3 {
+			width: 100%;
+		}
+
+		.span_2_of_3 {
+			width: 100%;
+		}
+
+		.span_1_of_3 {
+			width: 100%;
+		}
+	}
+
+	#tot1,
+	#tot2,
+	#tot3 {
+		float: left;
 	}
 }
