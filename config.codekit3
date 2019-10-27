@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/archive-project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/archive-project.php",
+		"oF": 0
+		},
+	"/archive.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/archive.php",
+		"oF": 0
+		},
 	"/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -43,6 +59,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/fields/group_5db57f505e1d8.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/fields/group_5db57f505e1d8-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -73,6 +97,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/functions/advanced-custom-fields.php",
+		"oF": 0
+		},
+	"/functions/custom-post-types.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/functions/custom-post-types.php",
 		"oF": 0
 		},
 	"/functions/images.php": {
@@ -166,6 +198,17 @@
 		"oAP": "/img/bx_loader.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"/img/Inform-to-Transform-White.png": {
+		"ft": 32768,
+		"iS": 19075,
+		"oA": 0,
+		"oAP": "/img/Inform-to-Transform-White.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/logo.png": {
 		"ft": 32768,
@@ -429,6 +472,14 @@
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
+		},
+	"/single-project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/single-project.php",
+		"oF": 0
 		},
 	"/single.php": {
 		"cB": 0,
