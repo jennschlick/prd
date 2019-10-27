@@ -18,7 +18,7 @@
             "collapsed": "field_5db4441cec61a",
             "min": 0,
             "max": 0,
-            "layout": "block",
+            "layout": "row",
             "button_label": "Add Column",
             "sub_fields": [
                 {
@@ -34,11 +34,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "block",
+                    "layout": "row",
                     "sub_fields": [
                         {
                             "key": "field_5db44468ec61b",
-                            "label": "Title",
+                            "label": "Title:",
                             "name": "about_column_title",
                             "type": "text",
                             "instructions": "",
@@ -57,7 +57,7 @@
                         },
                         {
                             "key": "field_5db44477ec61c",
-                            "label": "Image",
+                            "label": "Image:",
                             "name": "about_column_image",
                             "type": "image",
                             "instructions": "",
@@ -81,7 +81,7 @@
                         },
                         {
                             "key": "field_5db4448bec61d",
-                            "label": "Content",
+                            "label": "Content:",
                             "name": "about_column_content",
                             "type": "wysiwyg",
                             "instructions": "",
@@ -104,7 +104,7 @@
         },
         {
             "key": "field_5db44810fe246",
-            "label": "Title image",
+            "label": "Title Image:",
             "name": "about_title",
             "type": "image",
             "instructions": "",
@@ -157,5 +157,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1572096211
+    "modified": 1572176132
 }
