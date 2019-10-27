@@ -22,6 +22,7 @@ get_header();
 										<span><?php the_sub_field('about_column_title'); ?></span>
 									<?php } ?>
 								</div>
+								<!-- .content_header_img_front -->
 								<div class="content_header_img_back">
 									<div class="content_header_img_back_inner">
 										<?php if(get_sub_field('about_column_title')) { ?>
@@ -31,18 +32,23 @@ get_header();
 											<div><?php the_sub_field('about_column_content'); ?></div>
 										<?php } ?>
 									</div>
+									<!-- .content_header_img_back_inner -->
 								</div>
+								<!-- .content_header_img_back -->
 							</div>
+							<!-- .content_header_img -->
 						<?php endwhile; ?>
 					<?php endif; ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</div>
+		<!-- .content_header -->
 		<div class="about content cf">
 			<?php if(get_field('about_title')) { ?>
 				<img src="<?php the_field('about_title'); ?>" />
 			<?php } ?>
 		</div>
+		<!-- .about.content -->
 
 	<?php endwhile; ?>
 <?php else: ?>

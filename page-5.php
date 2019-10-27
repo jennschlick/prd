@@ -20,8 +20,8 @@ get_header();
 				</li>
 				<?php endforeach; ?>
 			</ul>
-			<?php endif; ?>
 			<!-- .front_slider -->
+			<?php endif; ?>
 		</div>
 		<!-- .slider_content -->
 
