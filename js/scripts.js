@@ -2,23 +2,36 @@
 
 	$(document).ready(function(){
 
-		$('body').delegate('#goto_portfolio', 'click', function(){
-			document.location.href = "../portfolio.html";
-		});
+		// $('body').delegate('#goto_portfolio', 'click', function(){
+		// 	document.location.href = "/portfolio/";
+		// });
 
 		$('.slider').bxSlider({
 			mode: 'horizontal',
 			pager: true,
-			infiniteLoop: false,
-  			hideControlOnEnd: true,
-  			onSlideAfter:  function($slideElement, oldIndex, newIndex){
-  				if(newIndex+1 == $('.slider li').length){
-  					$('.bx-next').attr('id', 'goto_portfolio');
-  				} else {
-  					$('.bx-next').removeAttr('id');
-  				}
-  			}
+			minSlides: 2,
+			maxSlides: 2,
+			moveSlides: 2,
+			slideWidth: 622,
+			infiniteLoop: true,
+			hideControlOnEnd: false,
+			// onSlideAfter:  function($slideElement, oldIndex, newIndex){
+			// 	if(newIndex+1 == $('.slider li').length){
+			// 		$('.bx-next').attr('id', 'goto_portfolio');
+			// 	} else {
+			// 		$('.bx-next').removeAttr('id');
+			// 	}
+			// }
+		});
 
+		$('.slider-sketchbook').bxSlider({
+			mode: 'horizontal',
+			pager: true,
+			minSlides: 1,
+			maxSlides: 1,
+			moveSlides: 1,
+			infiniteLoop: true,
+			hideControlOnEnd: false,
 		});
 
 		$('.front_slider').bxSlider({
@@ -78,7 +91,6 @@
 		}).hide();
 
 		$(window).resize();
-
 	});
 
 
@@ -102,12 +114,9 @@
 		var contWidth = $('.fixwidth').width();
 		$('.portfolio .item').removeClass('last');
 
-
-
 		var width = Math.ceil((contWidth-n) / n);
 
 		$('.portfolio .item').css({'width': width, 'height': width});
-		//$('.portfolio .item:nth-child('+n+'n)').addClass('last').css('width', contWidth - width*(n-1) - n);
 		$('.portfolio').show();
 	}
 
