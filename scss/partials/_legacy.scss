@@ -6,6 +6,10 @@ img {
 	height: auto;
 }
 
+.cf {
+	@include clearfix;
+}
+
 .fixwidth {
 	position: relative;
 	margin: 0 auto;
@@ -180,7 +184,7 @@ body.home .footer {
 
 .bx-wrapper {
 	position: relative;
-	*zoom: 1;
+	@include clearfix;
 }
 
 .bx-wrapper img {
@@ -190,8 +194,8 @@ body.home .footer {
 }
 
 .project .bx-wrapper img {
-	display: inline;
-	width: 50%;
+	display: block;
+	width: 100%;
 }
 
 .bx-wrapper .bx-loading {
@@ -205,25 +209,51 @@ body.home .footer {
 	z-index: 2000;
 }
 
+.slider {
+	li {
+		box-sizing: border-box;
+
+		&:nth-child(odd) {
+			border-right: 2px solid $white;
+		}
+
+		&:nth-child(even) {
+			border-left: 2px solid $white;
+		}
+	}
+}
+
+.slider-sketchbook {
+	img {
+		margin: 0 auto;
+		max-width: 1000px;
+		width: 100%;
+	}
+}
+
 .portfolio {
 	position: relative;
 	overflow: hidden;
 }
 
 .portfolio .item {
+	height: 207px;
 	position: relative;
 	overflow: hidden;
 	border-right: 1px solid $white;
 	border-bottom: 1px solid $white;
 	float: left;
+	width: 207px;
 }
 
-.portfolio .item.last {
-	border-right: 0;
+.portfolio .item_static {
+	background: $orange url('../img/Inform-to-Transform-White.png') center center no-repeat;
+	background-size: contain;
 }
 
 .portfolio .item a {
 	display: block;
+	font-weight: normal !important;
 	text-decoration: none;
 }
 
@@ -258,10 +288,6 @@ body.home .footer {
 			margin-bottom: 0;
 		}
 	}
-}
-
-.project {
-	background: $graylightest;
 }
 
 .col1,
@@ -308,14 +334,12 @@ body.home .footer {
 .content blockquote {
 	color: $graymedium;
 	font-size: 15px;
-	line-height: 20px;
-	font-weight: 700;
+	font-weight: normal;
 }
 
 .content blockquote p {
-	margin-bottom: 0;
-	font-family: Helvetica, sans-serif;
-	font-style: oblique;
+	margin-bottom: ($spacer / 4);
+	font-style: italic;
 }
 
 .field {
@@ -339,11 +363,11 @@ body.home .footer {
 }
 
 .about {
+	border-bottom: 30px solid #e38936;
 	padding: ($spacer * 3) 0;
 
 	img {
 		display: block;
-		height: auto;
 		margin: 0 auto;
 		max-width: 1170px;
 		width: 100%;
@@ -461,14 +485,17 @@ body.home .footer {
 }
 
 .portfolio_wrapper {
+	border-bottom: 30px solid $orange;
 	overflow: hidden;
 }
 
 .portfolio {
+	border-bottom: 2px solid $white;
 	width: 1000%;
 }
 
-.item_11 {
+.portfolio .item:nth-of-type(7),
+.portfolio .item:nth-of-type(13) {
 	clear: left;
 }
 
@@ -499,6 +526,10 @@ body.home .footer {
 .bx-pager-item {
 	display: inline-block;
 	padding-left: 12px;
+
+	&:only-child {
+		display: none !important;
+	}
 }
 
 .bx-pager-item a {
@@ -521,8 +552,14 @@ body.home .footer {
 	overflow: hidden;
 }
 
+body.postid-98 .slider_wrap {
+	border-bottom: 30px solid $graylight;
+}
+
 .project .content {
+	background: $graylightest;
 	min-height: 226px;
+	@include clearfix;
 }
 
 .field-name-field-project-summary p {
@@ -534,11 +571,12 @@ body.home .footer {
 }
 
 .bx-next.disabled {
-	width: 36px;
-	height: 15px;
-	background: url('../img/slider_grid.png');
-	right: 18px;
-	bottom: 20px;
+	display: none !important;
+	// width: 36px;
+	// height: 15px;
+	// background: url('../img/slider_grid.png');
+	// right: 18px;
+	// bottom: 20px;
 }
 
 #bc a {
@@ -676,7 +714,6 @@ body.home .footer {
 
 	img {
 		display: block;
-		height: auto;
 		width: 100%;
 	}
 
