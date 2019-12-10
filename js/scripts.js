@@ -38,7 +38,8 @@
 			mode: 'fade',
 			pager: false,
 			auto: true,
-			pause: 6000
+			pause: 3000,
+			speed: 3000
 		});
 
 		$('#menu_button').click(function(){

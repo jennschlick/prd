@@ -92,7 +92,8 @@ img {
 	opacity: 1;
 }
 
-.main_menu li.current-menu-item a {
+.main_menu li.current-menu-item a,
+body.single-project .main_menu li#menu-item-100 a{
 	font-weight: bold;
 	opacity: 1;
 }
@@ -268,13 +269,13 @@ body.home .footer {
 	right: 0;
 	background: url('../img/black_a7.png');
 	color: $graylight;
-	padding: 10px 5%;
+	padding: 10px 0;
 	line-height: 15px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 11px;
 	text-transform: uppercase;
-	width: 90%;
+	width: 100%;
 }
 
 .contacts {
