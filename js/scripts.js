@@ -2,10 +2,6 @@
 
 	$(document).ready(function(){
 
-		// $('body').delegate('#goto_portfolio', 'click', function(){
-		// 	document.location.href = "/portfolio/";
-		// });
-
 		$('.slider').bxSlider({
 			mode: 'horizontal',
 			pager: true,
@@ -15,13 +11,6 @@
 			slideWidth: 622,
 			infiniteLoop: true,
 			hideControlOnEnd: false,
-			// onSlideAfter:  function($slideElement, oldIndex, newIndex){
-			// 	if(newIndex+1 == $('.slider li').length){
-			// 		$('.bx-next').attr('id', 'goto_portfolio');
-			// 	} else {
-			// 		$('.bx-next').removeAttr('id');
-			// 	}
-			// }
 		});
 
 		$('.slider-sketchbook').bxSlider({
@@ -63,21 +52,13 @@
 			}
 		);
 
-		$('.content_header_img_front').hover(
+		$('.content_header_img').hover(
 			function(){
-				$('span', this).stop().animate({marginTop: -$('span', this).height()-20}, 'fast');
+				$('span', this).stop().animate({marginTop: -$('span', this).height()-30}, 'fast');
 			}, function(){
 				$('span', this).stop().animate({marginTop: 0}, 100);
 			}
 		);
-
-		$('.content_header_img_front').click(function() {
-      $(this).next('.content_header_img_back').toggle();
-    });
-
-		$('.content_header_img_back').click(function() {
-      $(this).toggle();
-    });
 
 		$('.tabs_navigation a').click(function(event) {
 			$('.tabs_content .tab').hide();

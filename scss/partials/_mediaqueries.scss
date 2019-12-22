@@ -102,6 +102,23 @@
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.about_who,
+	.about_why  {
+		.about_inner {
+			column-count: 2;
+			column-gap: ($spacer * 4);
+		}
+	}
+
+	.about_what  {
+		.about_inner {
+			column-count: 3;
+			column-gap: ($spacer * 2);
+		}
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.content_header_text {
 		font-size: 16px;

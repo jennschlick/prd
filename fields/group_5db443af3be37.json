@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5db443fbec619",
-            "label": "Columns",
+            "label": "Columns:",
             "name": "about_columns",
             "type": "repeater",
             "instructions": "",
@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5db4441cec61a",
-                    "label": "Column",
+                    "label": "Column:",
                     "name": "about_column",
                     "type": "group",
                     "instructions": "",
@@ -54,6 +54,27 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5dff34280ff5a",
+                            "label": "Link:",
+                            "name": "about_column_link",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "allow_archives": 0,
+                            "multiple": 0
                         },
                         {
                             "key": "field_5db44477ec61c",
@@ -157,5 +178,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1572176132
+    "modified": 1577011845
 }

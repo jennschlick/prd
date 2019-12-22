@@ -15,26 +15,16 @@ get_header();
 						<?php while( have_rows('about_column') ): the_row(); ?>
 							<div class="content_header_img">
 								<div class="content_header_img_front">
-									<?php if(get_sub_field('about_column_image')) { ?>
-										<img src="<?php the_sub_field('about_column_image'); ?>" />
-									<?php } ?>
-									<?php if(get_sub_field('about_column_title')) { ?>
-										<span><?php the_sub_field('about_column_title'); ?></span>
-									<?php } ?>
+									<?php if(get_sub_field('about_column_link')) { ?><a href="<?php the_sub_field('about_column_link'); ?>"><?php } ?>
+										<?php if(get_sub_field('about_column_image')) { ?>
+											<img src="<?php the_sub_field('about_column_image'); ?>" />
+										<?php } ?>
+										<?php if(get_sub_field('about_column_title')) { ?>
+											<span><?php the_sub_field('about_column_title'); ?></span>
+										<?php } ?>
+									<?php if(get_sub_field('about_column_link')) { ?></a><?php } ?>
 								</div>
 								<!-- .content_header_img_front -->
-								<div class="content_header_img_back">
-									<div class="content_header_img_back_inner">
-										<?php if(get_sub_field('about_column_title')) { ?>
-											<h2><?php the_sub_field('about_column_title'); ?></h2>
-										<?php } ?>
-										<?php if(get_sub_field('about_column_content')) { ?>
-											<div><?php the_sub_field('about_column_content'); ?></div>
-										<?php } ?>
-									</div>
-									<!-- .content_header_img_back_inner -->
-								</div>
-								<!-- .content_header_img_back -->
 							</div>
 							<!-- .content_header_img -->
 						<?php endwhile; ?>

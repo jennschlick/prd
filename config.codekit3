@@ -67,6 +67,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/fields/group_5dff3512f16aa.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/fields/group_5dff3512f16aa-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -232,9 +240,20 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/next.png": {
+	"/img/next-orange.png": {
 		"ft": 32768,
 		"iS": 1315,
+		"oA": 0,
+		"oAP": "/img/next-orange.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/next.png": {
+		"ft": 32768,
+		"iS": 0,
 		"oA": 0,
 		"oAP": "/img/next.png",
 		"oF": 0,
@@ -251,6 +270,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/prev-orange.png": {
+		"ft": 32768,
+		"iS": 1087,
+		"oA": 0,
+		"oAP": "/img/prev-orange.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -353,6 +383,30 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-15.php",
+		"oF": 0
+		},
+	"/page-313.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-313.php",
+		"oF": 0
+		},
+	"/page-315.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-315.php",
+		"oF": 0
+		},
+	"/page-317.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-317.php",
 		"oF": 0
 		},
 	"/page-5.php": {
