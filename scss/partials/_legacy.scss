@@ -420,6 +420,7 @@ body.home .footer {
 	a {
 		background-repeat: no-repeat;
 		background-size: auto 15px;
+		text-transform: uppercase;
 	}
 }
 
@@ -429,7 +430,7 @@ body.home .footer {
 	a {
 		background-image: url('../img/prev-orange.png');
 		background-position: center left;
-		padding-left: 25px;
+		padding-left: 23px;
 	}
 }
 
@@ -439,7 +440,7 @@ body.home .footer {
 	a {
 		background-image: url('../img/next-orange.png');
 		background-position: center right;
-		padding-right: 25px;
+		padding-right: 23px;
 	}
 }
 
