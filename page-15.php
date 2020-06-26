@@ -11,12 +11,12 @@ get_header();
 		<div class="contacts">
 			<div class="contacts_wrapper">
 				<div class="map_wrapper">
-					<iframe width="1000" height="415" id="gmap_canvas" src="https://maps.google.com/maps?q=14555%20Avion%20Parkway%2C%20Suite%20175%20Chantilly%2C%20Virginia%2020151&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<iframe src="https://www.google.com/maps/d/embed?mid=17IPQq_MSkiwClb6ozwzT4j6Iym4HWLCq&z=11" width="1000" height="415""></iframe>
 				</div>
 				<!-- .map_wrapper -->
 			</div>
 			<!-- .contacts_wrapper -->
-			<div class="content">
+			<div class="content cf">
 				<?php the_content(); ?>
 			</div>
 			<!-- .content -->
