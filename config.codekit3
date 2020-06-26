@@ -75,14 +75,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/fields/group_5dff4944596ea.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/fields/group_5dff4944596ea-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -415,14 +407,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-317.php",
-		"oF": 0
-		},
-	"/page-348.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-348.php",
 		"oF": 0
 		},
 	"/page-5.php": {
