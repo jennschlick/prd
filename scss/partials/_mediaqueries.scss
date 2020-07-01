@@ -120,16 +120,10 @@
 
 	body.page-id-15 {
 		.content {
-			text-align: right;
-
-			h2 {
-				text-align: left;
-			}
-
 			div {
 				display: inline-block;
-				max-width: 300px;
-				text-align: left;
+				float: left;
+				padding-top: 20px;
 				width: 30%;
 			}
 		}
