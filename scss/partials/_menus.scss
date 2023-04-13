@@ -1,3 +1,56 @@
 /*-----------------------------------------------------------------------------------*/
 /* Menus
 /*-----------------------------------------------------------------------------------*/
+
+.menu-main {
+	padding-right: $spacer;
+
+	@media (max-width: $medium-max) {
+
+	}
+
+	@media (min-width: $large-min) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	svg {
+		height: 80px;
+		width: 80px;
+
+		.logo-background {
+			fill: $orange;
+		}
+
+		.logo-letter {
+			fill: $white;
+		}
+	}
+
+	ul {
+		display: flex;
+
+		&, li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			font-size: $font-size-small;
+			font-weight: $font-weight-bold;
+			margin: 0 ($spacer);
+			text-transform: uppercase;
+
+			a {
+				color: $gray-dark;
+				transition: color 200ms ease;
+
+				&:hover {
+					color: $default-link-color-hover;
+				}
+			}
+		}
+	}
+}
