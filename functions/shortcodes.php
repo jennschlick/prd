@@ -4,11 +4,10 @@
 /*-----------------------------------------------------------------------------------*/
 
 // Current year
-// Usage: [year]
-// function prd_current_year($atts) {
-//  return date('Y');
-// }
-// add_shortcode('year', 'prd_current_year');
+function prd_current_year($atts) {
+ return date('Y');
+}
+add_shortcode('year', 'prd_current_year');
 
 // Site URL
 // Usage: [url]
