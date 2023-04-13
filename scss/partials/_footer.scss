@@ -1,3 +1,54 @@
 /*-----------------------------------------------------------------------------------*/
 /* Footer
 /*-----------------------------------------------------------------------------------*/
+
+.footer {
+	background: $gray-light;
+	padding-top: ($spacer * 3);
+	padding-bottom: ($spacer * 3);
+}
+
+.footer-linkedin {
+	margin-bottom: ($spacer);
+
+	svg {
+		fill: $gray-dark;
+		transition: fill 300ms ease;
+
+		&:hover {
+			fill: $orange;
+		}
+	}
+}
+
+.footer-deia {
+	background: #F2F2F2;
+	border-radius: 50px;
+	color: #9E9E9E;
+	display: inline-block;
+	font-size: $font-size-xsmall;
+	line-height: 1.5;
+	margin-bottom: ($spacer);
+	padding: ($spacer / 1.5) ($spacer) ($spacer / 1.5) ($spacer / 1.5);
+
+	@media (min-width: $medium-min) {
+		position: relative;
+		left: -10px;
+	}
+
+	> div {
+		display: flex;
+			align-items: center;
+	}
+
+	svg {
+		fill: #BABABA;
+		margin-right: ($spacer / 2);
+		min-width: 28px;
+	}
+}
+
+.footer-copyright {
+	color: #9E9E9E;
+	font-size: $font-size-xsmall;
+}

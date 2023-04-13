@@ -1,3 +1,59 @@
 /*-----------------------------------------------------------------------------------*/
 /* Header
 /*-----------------------------------------------------------------------------------*/
+
+.header {
+	background: $white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .03);
+	font-size: 0;
+	padding-right: $spacer;
+	position: relative;
+	z-index: 1;
+
+	@media (max-width: $medium-max) {
+
+	}
+
+	@media (min-width: $large-min) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	svg {
+		height: 80px;
+		width: 80px;
+
+		.logo-background {
+			fill: $orange;
+		}
+
+		.logo-letter {
+			fill: $white;
+		}
+	}
+
+	ul {
+		display: flex;
+
+		&, li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			font-size: $font-size-small;
+			margin: 0 ($spacer);
+			text-transform: uppercase;
+
+			a {
+				color: $gray-dark;
+
+				&:hover {
+					color: $default-link-color-hover;
+				}
+			}
+		}
+	}
+}

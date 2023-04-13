@@ -2,54 +2,26 @@
 /* Menus
 /*-----------------------------------------------------------------------------------*/
 
-.menu-main {
-	padding-right: $spacer;
+#menu-main-menu {
+	display: flex;
 
-	@media (max-width: $medium-max) {
-
+	&, li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
 	}
 
-	@media (min-width: $large-min) {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+	li {
+		font-size: $font-size-small;
+		font-weight: $font-weight-bold;
+		margin: 0 ($spacer);
+		text-transform: uppercase;
 
-	svg {
-		height: 80px;
-		width: 80px;
+		a {
+			color: $gray-dark;
 
-		.logo-background {
-			fill: $orange;
-		}
-
-		.logo-letter {
-			fill: $white;
-		}
-	}
-
-	ul {
-		display: flex;
-
-		&, li {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-
-		li {
-			font-size: $font-size-small;
-			font-weight: $font-weight-bold;
-			margin: 0 ($spacer);
-			text-transform: uppercase;
-
-			a {
-				color: $gray-dark;
-				transition: color 200ms ease;
-
-				&:hover {
-					color: $default-link-color-hover;
-				}
+			&:hover {
+				color: $orange;
 			}
 		}
 	}
