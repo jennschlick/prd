@@ -97,5 +97,51 @@ function prd_remove_help_tabs() {
 }
 add_action('admin_head', 'prd_remove_help_tabs');
 
-// Remove Gutenberg editor
-// add_filter('use_block_editor_for_post', '__return_false', 10);
+// Add custom colors
+function prd_colors() {
+	add_theme_support(
+		'editor-color-palette', array(
+			array(
+				'name'  => esc_html__( 'Orange', '@@textdomain' ),
+				'slug' => 'orange',
+				'color' => '#F7941D',
+			),
+			array(
+				'name'  => esc_html__( 'Light orange', '@@textdomain' ),
+				'slug' => 'orange-light',
+				'color' => '#FFF0E0',
+			),
+			array(
+				'name'  => esc_html__( 'Blue', '@@textdomain' ),
+				'slug' => 'blue',
+				'color' => '#0097DC',
+			),
+			array(
+				'name'  => esc_html__( 'Light blue', '@@textdomain' ),
+				'slug' => 'blue-light',
+				'color' => '#E7F2FA',
+			),
+			array(
+				'name'  => esc_html__( 'Dark gray', '@@textdomain' ),
+				'slug' => 'gray-dark',
+				'color' => '#212121',
+			),
+			array(
+				'name'  => esc_html__( 'Medium gray', '@@textdomain' ),
+				'slug' => 'gray-medium',
+				'color' => '#8F8F8F',
+			),
+			array(
+				'name'  => esc_html__( 'Light gray', '@@textdomain' ),
+				'slug' => 'gray-light',
+				'color' => '#FAFAFA',
+			),
+			array(
+				'name'  => esc_html__( 'White', '@@textdomain' ),
+				'slug' => 'white',
+				'color' => '#FFFFFF',
+			),
+		)
+	);
+}
+add_action( 'after_setup_theme', 'prd_colors' );
