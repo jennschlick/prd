@@ -42,26 +42,32 @@ a {
 		background: $gray-dark;
 		color: $white;
 	}
-
-	&.cta {
-		background-image: linear-gradient(120deg, #FFF0E0 0%, #FFF0E0 100%);
-		background-repeat: no-repeat;
-		background-size: 100% 0.4em;
-		background-position: 0 88%;
-		font-size: $font-size-small;
-		font-weight: $font-weight-bold;
-		text-transform: uppercase;
-		transition: background-size 0.25s ease-in, color 300ms ease;
-
-		&:hover {
-			background-size: 100% 88%;
-			color: $gray-dark;
-		}
-	}
 }
 
 .content a {
 	font-weight: $font-weight-bold;
+}
+
+a.link-cta {
+	font-size: $font-size-small;
+	text-transform: uppercase;
+}
+
+a.link-underline {
+	background-image: linear-gradient(120deg, $orange-light 0%, $orange-light 100%);
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 0.5em;
+	font-weight: $font-weight-bold;
+	padding-left: 3px;
+	padding-right: 3px;
+	transition: background-size 300ms ease, color 300ms ease;
+
+	&:hover {
+		background-image: linear-gradient(120deg, $orange 0%, $orange 100%);
+		background-size: 100% 100%;
+		color: $white;
+	}
 }
 
 h1, .h1,
@@ -77,32 +83,32 @@ h6, .h6 {
 
 h1,
 .h1 {
-	font-size: $font-size-large;
+	font-size: $font-size-h1;
 }
 
 h2,
 .h2 {
-
+	font-size: $font-size-h2;
 }
 
 h3,
 .h3 {
-
+	font-size: $font-size-h3;
 }
 
 h4,
 .h4 {
-
+	font-size: $font-size-h4;
 }
 
 h5,
 .h5 {
-
+	font-size: $font-size-h5;
 }
 
 h6,
 .h6 {
-	
+	font-size: $font-size-h6;
 }
 
 .heading-pre-heading {
@@ -131,10 +137,6 @@ p,
 table,
 ul {
 	margin: 0 0 ($spacer) 0;
-}
-
-blockquote {
-
 }
 
 ol,

@@ -7,15 +7,17 @@ $small-max:							480px;
 $medium-min:						481px;
 $medium-max:						781px;
 $large-min:							782px;
-$large-max:							1279px;
-$xlarge-min:						1280px;
+$large-max:							1080px;
+$xlarge-min:						1081px;
 
 // Colors
 $blue:								#0097DC;
+$blue-light:						#E7F2FA;
 $gray-dark:							#212121;
 $gray-light:						#FAFAFA;
 $gray-medium:						#8F8F8F;
 $orange:								#F7941D;
+$orange-light:						#FFF0E0;
 $white:								#FFFFFF;
 
 $default-font-color:				$gray-dark;
@@ -23,6 +25,7 @@ $default-link-color:				$orange;
 $default-link-color-hover:		darken($orange, 10%);
 
 // Grid
+$max-width:							1120px;
 $spacer:								20px;
 
 // Typography
@@ -37,6 +40,13 @@ $default-heading-line-height:	1.3;
 $font-weight-bold:				600;
 
 $font-size-xsmall:				14px;
-$font-size-small:					15px;
+$font-size-small:					16px;
 $font-size-medium:				20px;
 $font-size-large:					40px;
+
+$font-size-h1:						$font-size-large;
+$font-size-h2:						35px;
+$font-size-h3:						30px;
+$font-size-h4:						25px;
+$font-size-h5:						20px;
+$font-size-h6:						$default-font-size;

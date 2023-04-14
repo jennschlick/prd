@@ -5,12 +5,168 @@
 .footer {
 	background: $gray-light;
 	padding-top: ($spacer * 3);
-	padding-bottom: ($spacer * 3);
+	padding-bottom: ($spacer);
+}
+
+.footer-content {
+	@media (min-width: $large-min) {
+		display: flex;
+			flex-flow: row nowrap;
+			align-items: flex-start;
+			justify-content: space-between;
+	}
+}
+
+.footer-contact {
+	@media (min-width: $medium-min) and (max-width: $large-max)  {
+		flex: 1 1 65%;
+	}
+
+	@media (min-width: $xlarge-min) {
+		flex: 1 1 55%;
+	}
+
+	@media (min-width: $large-min) {
+		display: flex;
+			flex-flow: row wrap;
+	}
+
+	svg {
+		display: inline-block;
+		fill: $orange;
+		margin-right: ($spacer / 3);
+		vertical-align: middle;
+		width: auto;
+	}
+}
+
+.footer-email,
+.footer-phone {
+	font-size: $font-size-medium;
+
+	svg {
+		height: 25px;
+	}
+}
+
+.footer-email {
+	@media (max-width: $medium-max) {
+		margin-bottom: ($spacer * 2);
+	}
+
+	@media (min-width: $medium-min) and (max-width: $large-max)  {
+		margin-right: ($spacer);
+	}
+
+	@media (min-width: $xlarge-min) {
+		margin-right: ($spacer * 2);
+	}
+}
+
+.footer-phone {
+	svg {
+		stroke: $orange;
+	}
+}
+
+.footer-locations-wrapper {
+	margin-top: ($spacer * 2);
+	margin-bottom: ($spacer * 2);
+
+	@media (min-width: $large-min) {
+		display: flex;
+			flex-flow: row nowrap;
+		flex-basis: 100%;
+	}
+
+	svg {
+		height: 30px;
+		margin: 2px ($spacer - 8px) 0 5px;
+	}
+}
+
+.footer-locations {
+	font-size: $font-size-small;
+
+	@media (min-width: $large-min) {
+		display: flex;
+			flex-flow: row nowrap;
+	}
+}
+
+.footer-location {
+	svg {
+		float: left;
+		margin-top: 5px;
+	}
+
+	> div {
+		overflow: hidden;
+	}
+
+	&:nth-of-type(1) {
+		@media (min-width: $medium-min) and (max-width: $large-max)  {
+			margin-right: ($spacer);
+		}
+
+		@media (min-width: $xlarge-min) {
+			margin-right: ($spacer * 2);
+		}
+	}
+
+	&:nth-of-type(2) {
+		@media (max-width: $medium-max) {
+			margin-top: ($spacer / 2);
+			margin-left: 38px;
+		}
+	}
+}
+
+.footer-map {
+	@media (min-width: $medium-min) and (max-width: $large-max) {
+		flex: 1 1 35%;
+	}
+
+	@media (max-width: $medium-max) {
+		margin-top: ($spacer * 2);
+	}
+
+	@media (min-width: $xlarge-min) {
+		flex: 1 1 45%;
+	}
+
+	.footer-map-iframe {
+		overflow: visible;
+		position: relative;
+
+		&:after {
+			background: $orange;
+			content: '';
+			display: block;
+			height: 50%;
+			position: absolute;
+				bottom: -10px;
+				right: -10px;
+			width: 50%;
+			z-index: 0;
+		}
+	}
+
+	iframe {
+		border: 0;
+		display: block;
+		height: 300px;
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+#map img {
+	pointer-events: none;
 }
 
 .footer-linkedin {
-	margin-bottom: ($spacer);
-
 	svg {
 		fill: $gray-dark;
 		transition: fill 300ms ease;
@@ -28,17 +184,18 @@
 	display: inline-block;
 	font-size: $font-size-xsmall;
 	line-height: 1.5;
+	margin-top: ($spacer * 2);
 	margin-bottom: ($spacer);
 	padding: ($spacer / 1.5) ($spacer) ($spacer / 1.5) ($spacer / 1.5);
 
-	@media (min-width: $medium-min) {
+	@media (min-width: $large-min) {
 		position: relative;
 		left: -10px;
 	}
 
 	> div {
 		display: flex;
-			align-items: center;
+		align-items: center;
 	}
 
 	svg {

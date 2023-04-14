@@ -1,0 +1,75 @@
+/*-----------------------------------------------------------------------------------*/
+/* Editor
+/*-----------------------------------------------------------------------------------*/
+
+// Background colors
+.has-blue-background-color {
+	background-color: $blue;
+}
+
+.has-blue-light-background-color {
+	background-color: $blue-light;
+}
+
+.has-gray-dark-background-color {
+	background-color: $gray-dark;
+}
+
+.has-gray-light-background-color {
+	background-color: $gray-light;
+}
+
+.has-gray-medium-background-color {
+	background-color: $gray-medium;
+}
+
+.has-orange-background-color {
+	background-color: $orange;
+}
+
+.has-orange-light-background-color {
+	background-color: $orange-light;
+}
+
+.has-white-background-color {
+	background-color: $white;
+}
+
+// Block: Group
+.wp-block-group.has-background {
+	margin-bottom: ($spacer);
+	padding: 1.25em 2.375em;
+}
+
+// Text colors
+.has-blue-color {
+	color: $blue;
+}
+
+.has-blue-light-color {
+	color: $blue-light;
+}
+
+.has-gray-dark-color {
+	color: $gray-dark;
+}
+
+.has-gray-light-color {
+	color: $gray-light;
+}
+
+.has-gray-medium-color {
+	color: $gray-medium;
+}
+
+.has-orange-color {
+	color: $orange;
+}
+
+.has-orange-light-color {
+	color: $orange-light;
+}
+
+.has-white-color {
+	color: $white;
+}
