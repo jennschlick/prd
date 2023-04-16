@@ -30,8 +30,12 @@
 	<?php endwhile; ?>
 <?php else : ?>
 
-	<h1>404 &mdash; Page not found</h1>
-	<p>This page cannot be found.</p>
+	<div id="top" class="content">
+		<div class="wrapper">
+			<h1>404 &mdash; Page not found</h1>
+			<p>This page cannot be found.</p>
+		</div>
+	</div>
 
 <?php endif; ?>
 

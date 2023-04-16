@@ -3,7 +3,6 @@
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
-
 		<?php if ( get_field( 'hero_media' )): ?>
 			<div class="hero">
 				<?php if ( get_field( 'hero_heading' )): ?>
@@ -18,7 +17,7 @@
 			</div>
 		<?php endif; ?>
 
-		<div class="content">
+		<div id="top" class="content">
 			<div class="wrapper">
 				<?php the_content(); ?>
 			</div>
@@ -27,8 +26,12 @@
 	<?php endwhile; ?>
 <?php else : ?>
 
-	<h1>404 &mdash; Page not found</h1>
-	<p>This page cannot be found.</p>
+	<div id="top" class="content">
+		<div class="wrapper">
+			<h1>404 &mdash; Page not found</h1>
+			<p>This page cannot be found.</p>
+		</div>
+	</div>
 
 <?php endif; ?>
 
