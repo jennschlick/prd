@@ -83,6 +83,23 @@
             "new_lines": ""
         },
         {
+            "key": "field_643a9491893b8",
+            "label": "Location #1 Google Maps Link:",
+            "name": "location_1_google_maps_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_64385b134cae0",
             "label": "Location #2 Name:",
             "name": "location_2_name",
@@ -121,6 +138,23 @@
             "rows": "",
             "placeholder": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_643a94ab893b9",
+            "label": "Location #2 Google Maps Link:",
+            "name": "location_2_google_maps_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -141,5 +175,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681415275
+    "modified": 1681560787
 }
