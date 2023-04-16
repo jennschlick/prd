@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/acf-json\/group_643ac6a9d4291.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_643ac6a9d4291-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/acf-json\/group_64383f66a0f54.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -39,6 +47,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/archive.php",
+      "oF" : 0
+    },
+    "\/blocks\/block-projects.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/block-projects.php",
       "oF" : 0
     },
     "\/css\/styles.css" : {
@@ -157,11 +173,71 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/img\/icon-arrow-blue.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-arrow-blue.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-arrow-dark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-arrow-dark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-arrow-light.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-arrow-light.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-arrow-orange.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-arrow-orange.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/icon-deia.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/img\/icon-deia.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-email.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-email.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-link.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-link.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -177,11 +253,90 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/icon-map-solid.png" : {
+      "ft" : 32768,
+      "iS" : 1441,
+      "oA" : 0,
+      "oAP" : "\/img\/icon-map-solid.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/icon-map-solid.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-map-solid.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-map.png" : {
+      "ft" : 32768,
+      "iS" : 1698,
+      "oA" : 0,
+      "oAP" : "\/img\/icon-map.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/icon-map.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-map.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-phone.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-phone.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/img\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/placeholder.png" : {
+      "ft" : 32768,
+      "iS" : 10905,
+      "oA" : 0,
+      "oAP" : "\/img\/placeholder.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/placeholder.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/placeholder.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -235,7 +390,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/scss\/partials\/_buttons.scss" : {
+    "\/scss\/partials\/_breadcrumb.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -244,7 +399,22 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/scss\/partials\/_buttons.css",
+      "oAP" : "\/scss\/partials\/_breadcrumb.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/scss\/partials\/_editor.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_editor.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -310,6 +480,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/scss\/partials\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/scss\/partials\/_menus.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -320,6 +505,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/partials\/_menus.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/scss\/partials\/_mixins.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_mixins.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -350,6 +550,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/partials\/_reset.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/scss\/partials\/_root.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_root.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
