@@ -22,12 +22,13 @@ function prd_custom_post_types() {
 	$args = array(
 		'labels' => $labels,
 		'public' => false,
-		'publicly_queryable' => false,
+		'publicly_queryable' => true,
 		'menu_icon' => 'dashicons-admin-page',
 		'show_ui' => true,
 		'query_var' => false,
 		'capability_type' => 'post',
 		'hierarchical' => false,
+		'show_in_rest' => true,
 		'supports' => array('title','editor','thumbnail','revisions'),
 		'has_archive' => false
 	);
@@ -57,6 +58,7 @@ function prd_custom_post_types() {
 		'rewrite' => array('slug' => 'project'),
 		'capability_type' => 'post',
 		'hierarchical' => false,
+		'show_in_rest' => true,
 		'supports' => array('title','editor','thumbnail','revisions'),
 		'has_archive' => false
 	);
