@@ -145,3 +145,31 @@ function prd_colors() {
 	);
 }
 add_action( 'after_setup_theme', 'prd_colors' );
+
+// Add custom font sizes
+function prd_font_sizes() {
+	add_theme_support('disable-custom-font-sizes');
+	add_theme_support( 'editor-font-sizes', array(
+		array(
+			'name' => __( 'Small'),
+			'size' => 16,
+			'slug' => 'small'
+		),
+		array(
+			'name' => __( 'Normal'),
+			'size' => 18,
+			'slug' => 'normal'
+		),
+		array(
+			'name' => __( 'Large'),
+			'size' => 20,
+			'slug' => 'large'
+		),
+		array(
+			'name' => __( 'Huge'),
+			'size' => 40,
+			'slug' => 'huge'
+		)
+	) );
+}
+add_action( 'after_setup_theme', 'prd_font_sizes' );
