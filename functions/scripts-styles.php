@@ -11,6 +11,7 @@ function prd_styles_scripts() {
 	// wp_dequeue_style( 'wp-block-library' );
 
 	// Enqueue scripts
+	wp_enqueue_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' );
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js' );
 
 	// Enqueue styles
