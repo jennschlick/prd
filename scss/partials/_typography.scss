@@ -174,3 +174,9 @@ b,
 strong {
 	font-weight: $font-weight-bold;
 }
+
+.label {
+	font-size: $font-size-small;
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
+}

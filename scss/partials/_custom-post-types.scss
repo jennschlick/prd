@@ -1,0 +1,133 @@
+/*-----------------------------------------------------------------------------------*/
+/* Custom Post Types
+/*-----------------------------------------------------------------------------------*/
+
+body.single-project {
+	.hero {
+		img {
+			@media (max-width: $medium-max) {
+				display: block;
+				height: auto;
+				width: 100%;
+			}
+
+			@media (min-width: $large-min) {
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+					top: 0;
+					left: 0;
+				width: 100%;
+			}
+		}
+
+		.h3 {
+			color: $white;
+		}
+	}
+
+	.content {
+		padding-top: 0;
+	}
+
+	.project-introduction {
+		background: $gray-light;
+		margin-bottom: ($spacer * 3);
+		padding: ($spacer * 4) 0 ($spacer * 2) 0;
+
+		.wp-block-columns {
+			margin-bottom: 0;
+
+			@media (max-width: $medium-max) {
+				gap: 0;
+			}
+
+			.wp-block-column {
+				> *:last-child {
+					margin-bottom: 0;
+				}
+
+				&:nth-child(2) {
+					color: $gray-medium;
+					font-size: $font-size-small;
+					line-height: $default-heading-line-height;
+
+					a {
+						color: $gray-medium;
+
+						&:hover {
+							color: $gray-dark;
+						}
+					}
+
+					.label {
+						color: $gray-dark;
+					}
+
+					> ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+
+						li {
+							display: flex;
+							margin-bottom: ($spacer);
+
+							.label {
+								margin-right: ($spacer / 4);
+								white-space: nowrap;
+							}
+
+							a {
+								&:hover {
+									svg {
+										fill: $gray-dark;
+									}
+								}
+
+								svg {
+									display: inline-block;
+									fill: $gray-medium;
+									height: 10px;
+									margin-left: ($spacer / 4);
+									width: 10px;
+								}
+							}
+						}
+					}
+
+					> div {
+						display: flex;
+
+						> div {
+							&:nth-of-type(1) {
+								padding-right: ($spacer / 2);
+								width: 55%;
+							}
+
+							&:nth-of-type(2) {
+								width: 45%;
+							}
+
+							.label {
+								display: block;
+								margin-bottom: ($spacer / 2);
+							}
+
+							ol,
+							ul {
+								margin: 0 0 0 ($spacer);
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.breadcrumb {
+		margin-top: ($spacer * 3);
+		text-align: center;
+	}
+}
