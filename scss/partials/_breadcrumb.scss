@@ -1,0 +1,25 @@
+/*-----------------------------------------------------------------------------------*/
+/* Breadcrumb
+/*-----------------------------------------------------------------------------------*/
+
+.breadcrumb {
+	margin-bottom: ($spacer / 2 + 5px);
+
+	a {
+		&:before {
+			background: url('../img/icon-arrow-orange.svg') 0 0 no-repeat;
+			content: '';
+			display: inline-block;
+			height: 10px;
+			margin-right: ($spacer / 4);
+			transform: scaleX(-1);
+			width: 10px;
+		}
+
+		&:hover {
+			&:before {
+				background-image: url('../img/icon-arrow-light.svg');
+			}
+		}
+	}
+}

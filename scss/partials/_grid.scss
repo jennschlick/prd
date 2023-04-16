@@ -3,11 +3,37 @@
 /*-----------------------------------------------------------------------------------*/
 
 .content {
-	padding-top: ($spacer * 3);
 	padding-bottom: ($spacer * 3);
-	
-	*:last-child {
-		margin-bottom: 0;
+	position: relative;
+	z-index: 1;
+
+	@media (max-width: $medium-max) {
+		padding-top: ($spacer * 3);
+	}
+
+	@media (min-width: $large-min) {
+		padding-top: ($spacer * 3 + 80px);
+	}
+
+	&:after {
+		background: radial-gradient(circle, rgba($blue, 1) 0%, rgba($blue, 0) 50%);
+		background-repeat: no-repeat;
+		content: '';
+		height: 1000px;
+		opacity: .2;
+		position: absolute;
+			top: -250px;
+			right: -500px;
+		width: 1000px;
+		z-index: -1;
+	}
+}
+
+body.home {
+	.content {
+		@media (min-width: $large-min) {
+			padding-top: ($spacer * 3);
+		}
 	}
 }
 

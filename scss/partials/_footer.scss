@@ -4,8 +4,21 @@
 
 .footer {
 	background: $gray-light;
-	padding-top: ($spacer * 3);
+	padding-top: ($spacer);
 	padding-bottom: ($spacer);
+	position: relative;
+	width: 100%;
+	z-index: 1;
+
+	.h3 {
+		margin-top: ($spacer * 2);
+	}
+}
+
+body.page-id-15 {
+	.footer {
+		background: transparent;
+	}
 }
 
 .footer-content {
@@ -18,20 +31,22 @@
 }
 
 .footer-contact {
-	@media (min-width: $medium-min) and (max-width: $large-max)  {
-		flex: 1 1 65%;
-	}
-
-	@media (min-width: $xlarge-min) {
-		flex: 1 1 55%;
+	@media (max-width: $medium-max)  {
+		flex: 1 1 60%;
 	}
 
 	@media (min-width: $large-min) {
+		flex: 1 1 55%;
+	}
+
+	@media (min-width: $xlarge-min) {
 		display: flex;
 			flex-flow: row wrap;
 	}
 
-	svg {
+	.icon-email,
+	.icon-phone,
+	.icon-location {
 		display: inline-block;
 		fill: $orange;
 		margin-right: ($spacer / 3);
@@ -44,44 +59,43 @@
 .footer-phone {
 	font-size: $font-size-medium;
 
-	svg {
+	.icon {
 		height: 25px;
 	}
 }
 
 .footer-email {
-	@media (max-width: $medium-max) {
-		margin-bottom: ($spacer * 2);
+	@media (max-width: $large-max) {
+		margin-bottom: ($spacer);
 	}
 
-	@media (min-width: $medium-min) and (max-width: $large-max)  {
+	@media (min-width: $medium-min) and (max-width: $large-max) {
 		margin-right: ($spacer);
 	}
 
 	@media (min-width: $xlarge-min) {
-		margin-right: ($spacer * 2);
+		margin-right: ($spacer * 1.5);
 	}
 }
 
 .footer-phone {
-	svg {
+	.icon {
 		stroke: $orange;
 	}
 }
 
 .footer-locations-wrapper {
-	margin-top: ($spacer * 2);
-	margin-bottom: ($spacer * 2);
+	@media (max-width: $large-max) {
+		margin-top: ($spacer);
+		margin-bottom: ($spacer);
+	}
 
-	@media (min-width: $large-min) {
+	@media (min-width: $xlarge-min) {
 		display: flex;
 			flex-flow: row nowrap;
 		flex-basis: 100%;
-	}
-
-	svg {
-		height: 30px;
-		margin: 2px ($spacer - 8px) 0 5px;
+		margin-top: ($spacer * 2);
+		margin-bottom: ($spacer * 2);
 	}
 }
 
@@ -95,9 +109,19 @@
 }
 
 .footer-location {
-	svg {
+	.icon-location {
 		float: left;
-		margin-top: 5px;
+		height: 30px;
+		margin: 5px ($spacer - 8px) 0 5px;
+	}
+
+	a {
+		color: $gray-dark;
+		font-weight: $default-font-weight !important;
+
+		&:hover {
+			color: $orange;
+		}
 	}
 
 	> div {
@@ -105,16 +129,20 @@
 	}
 
 	&:nth-of-type(1) {
-		@media (min-width: $medium-min) and (max-width: $large-max)  {
+		@media (min-width: $medium-min) and (max-width: $large-max) {
 			margin-right: ($spacer);
 		}
 
 		@media (min-width: $xlarge-min) {
-			margin-right: ($spacer * 2);
+			margin-right: ($spacer * 2 + 5px);
 		}
 	}
 
 	&:nth-of-type(2) {
+		@media (min-width: $medium-min) and (max-width: $large-max) {
+			margin-right: ($spacer / 2);
+		}
+
 		@media (max-width: $medium-max) {
 			margin-top: ($spacer / 2);
 			margin-left: 38px;
@@ -123,21 +151,39 @@
 }
 
 .footer-map {
+	margin-bottom: ($spacer * 2);
+
 	@media (min-width: $medium-min) and (max-width: $large-max) {
-		flex: 1 1 35%;
+		flex: 1 1 40%;
 	}
 
-	@media (max-width: $medium-max) {
-		margin-top: ($spacer * 2);
+	@media (max-width: $large-max) {
+		margin-top: ($spacer);
 	}
 
 	@media (min-width: $xlarge-min) {
 		flex: 1 1 45%;
 	}
 
-	.footer-map-iframe {
+	.footer-map-media {
 		overflow: visible;
 		position: relative;
+
+		.gmpMapDetailsContainer {
+			height: 0 !important;
+			overflow: hidden;
+			padding-bottom: 60%;
+			position: relative;
+			z-index:  1;
+		}
+
+		.gmp_MapPreview {
+			height: 100% !important;
+			position: absolute;
+				top: 0;
+				left: 0;
+			width: 100% !important;
+		}
 
 		&:after {
 			background: $orange;
@@ -151,25 +197,13 @@
 			z-index: 0;
 		}
 	}
-
-	iframe {
-		border: 0;
-		display: block;
-		height: 300px;
-		position: relative;
-		width: 100%;
-		z-index: 1;
-	}
-}
-
-#map img {
-	pointer-events: none;
 }
 
 .footer-linkedin {
-	svg {
+	.icon {
 		fill: $gray-dark;
-		transition: fill 300ms ease;
+		height: 31px;
+		width: auto;
 
 		&:hover {
 			fill: $orange;
@@ -184,7 +218,6 @@
 	display: inline-block;
 	font-size: $font-size-xsmall;
 	line-height: 1.5;
-	margin-top: ($spacer * 2);
 	margin-bottom: ($spacer);
 	padding: ($spacer / 1.5) ($spacer) ($spacer / 1.5) ($spacer / 1.5);
 
@@ -198,10 +231,13 @@
 		align-items: center;
 	}
 
-	svg {
+	.icon {
+		display: inline-block;
 		fill: #BABABA;
+		flex: 0 0 31px;
+		height: 31px;
 		margin-right: ($spacer / 2);
-		min-width: 28px;
+		width: auto;
 	}
 }
 

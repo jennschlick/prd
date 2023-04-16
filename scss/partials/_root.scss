@@ -1,0 +1,46 @@
+/*-----------------------------------------------------------------------------------*/
+/* Root
+/*-----------------------------------------------------------------------------------*/
+
+:target:before {
+	@media (min-width: $large-min) {
+		content: "";
+		display: block;
+		height: 100px;
+		margin: -100px 0 0;
+	}
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+
+	&.logged-in {
+		.header {
+			@media (min-width: 783px) {
+				top: 32px;
+			}
+		}
+		
+		#wp-admin-bar-top-secondary,
+		#wp-admin-bar-my-account {
+			@media (max-width: 782px) {
+				height: 46px;
+			}
+		}
+
+		#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
+			@media (max-width: 782px) {
+				top: 46px;
+			}
+		}
+	}
+}

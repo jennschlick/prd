@@ -1,0 +1,73 @@
+/*-----------------------------------------------------------------------------------*/
+/* Hero
+/*-----------------------------------------------------------------------------------*/
+
+.hero {
+	position: relative;
+
+	@media (max-width: $medium-max) {
+		height: auto;
+
+		&:after {
+			background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+			content: '';
+			height: 100%;
+			position: absolute;
+				top: 0;
+				left: 0;
+			width: 100%;
+		}
+	}
+
+	@media (min-width: $large-min) {
+		height: 100vh;
+		
+		&:after {
+			background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 100%);
+			content: '';
+			height: 100%;
+			position: absolute;
+				top: 0;
+				left: 0;
+			width: 100%;
+		}
+	}
+
+	.hero-heading {
+		color: $white;
+		line-height: 1;
+		position: absolute;
+			bottom: ($spacer * 2);
+			left: ($spacer * 2);
+		z-index: 1;
+
+		@media (max-width: $medium-max) {
+			font-size: $font-size-large;
+		}
+
+		@media (min-width: $large-min) {
+			font-size: 90px;
+		}
+
+		span {
+			color: $orange;
+		}
+	}
+
+	.hero-video {
+		@media (max-width: $medium-max) {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+
+		@media (min-width: $large-min) {
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+				top: 0;
+				left: 0;
+			width: 100%;
+		}
+	}
+}

@@ -2,8 +2,22 @@
 /* Menus
 /*-----------------------------------------------------------------------------------*/
 
+.menu-wrapper {
+	width: 100%;
+}
+
 #menu-main-menu {
-	display: flex;
+	@media (max-width: $medium-max) {
+		clear: both;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .2s ease-out;
+	}
+
+	@media (min-width: $large-min) {
+		display: flex;
+		max-height: none;
+	}
 
 	&, li {
 		list-style-type: none;
@@ -12,17 +26,150 @@
 	}
 
 	li {
-		font-size: $font-size-xsmall;
 		font-weight: $font-weight-bold;
-		margin: 0 ($spacer);
 		text-transform: uppercase;
+
+		@media (max-width: $medium-max) {
+			font-size: $default-font-size;
+			margin: 0;
+			text-align: center;
+		}
+
+		@media (min-width: $large-min) {
+			font-size: $font-size-xsmall;
+			margin: 0 ($spacer);
+		}
+
+		&:first-child {
+			a {
+				@media (max-width: $medium-max) {
+					padding-top: ($spacer * 1.5);
+				}
+			}
+		}
+
+		&:last-child {
+			a {
+				@media (max-width: $medium-max) {
+					padding-bottom: ($spacer * 1.5);
+				}
+			}
+		}
 
 		a {
 			color: $gray-dark;
+
+			@media (max-width: $medium-max) {
+				display: block;
+				padding: ($spacer / 2) 0;
+			}
 
 			&:hover {
 				color: $orange;
 			}
 		}
+
+		&.current-menu-item {
+			a {
+				color:  $orange;
+			}
+		}
 	}
+}
+
+body.home {
+	.header {
+		#menu-main-menu {
+			li {
+				a {
+					@media (min-width: $large-min) {
+						color: $white;
+					}
+				}
+			}
+		}
+
+		&.sticky {
+			#menu-main-menu {
+				li {
+					a {
+						@media (min-width: $large-min) {
+							color: $gray-dark;
+
+							&:hover {
+								color: $orange;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	margin-top: ($spacer / 2);
+	padding: 28px ($spacer);
+	position: relative;
+	user-select: none;
+
+	@media (min-width: $large-min) {
+		display: none;
+	}
+}
+
+.menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+.menu-icon .navicon:before {
+	top: 5px;
+}
+
+.menu-icon .navicon:after {
+	top: -5px;
+}
+
+.menu-btn {
+	display: none;
+}
+
+.menu-btn:checked ~ #menu-main-menu {
+	max-height: 400px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
 }
