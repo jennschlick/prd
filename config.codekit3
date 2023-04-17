@@ -33,6 +33,14 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/acf-json\/group_643d3482bce80.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_643d3482bce80-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/acf-json\/group_64383f66a0f54.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -423,6 +431,14 @@
       "oAP" : "\/page-projects.php",
       "oF" : 0
     },
+    "\/page-team.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-team.php",
+      "oF" : 0
+    },
     "\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -634,6 +650,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/partials\/_root.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/scss\/partials\/_team.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_team.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
