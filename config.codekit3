@@ -17,6 +17,22 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/acf-json\/group_643c2cb6e3d24.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_643c2cb6e3d24-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/acf-json\/group_643d14c46ec4e.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_643d14c46ec4e-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/acf-json\/group_64383f66a0f54.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -233,6 +249,36 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/icon-letter-d.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-letter-d.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-letter-p.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-letter-p.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/icon-letter-r.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/icon-letter-r.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/icon-link.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -367,6 +413,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-contact.php",
+      "oF" : 0
+    },
+    "\/page-projects.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-projects.php",
       "oF" : 0
     },
     "\/page.php" : {
@@ -540,6 +594,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/scss\/partials\/_projects.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_projects.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/scss\/partials\/_reset.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -614,6 +683,14 @@
       "oS" : 3,
       "pg" : 0,
       "sct" : 1
+    },
+    "\/single-project.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/single-project.php",
+      "oF" : 0
     },
     "\/single.php" : {
       "cB" : 0,
