@@ -19,7 +19,7 @@
 	background-size: cover;
 	display: flex;
 	position: relative;
-	transition: all .7s cubic-bezier(0, 1, 0.5, 1);
+	transition: transform .7s cubic-bezier(0, 1, 0.5, 1);
 
 	&:not(:last-child) {
 		margin-bottom: ($spacer);
