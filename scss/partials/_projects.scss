@@ -1,7 +1,85 @@
 /*-----------------------------------------------------------------------------------*/
-/* Custom Post Types
+/* Projects
 /*-----------------------------------------------------------------------------------*/
 
+// Project grid
+.project-grid {
+	@media (min-width: $xlarge-min) {
+		display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+
+	}
+}
+
+// Project preview
+.project-preview {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	position: relative;
+	transition: all .7s cubic-bezier(0, 1, 0.5, 1);
+
+	&:not(:last-child) {
+		margin-bottom: ($spacer);
+	}
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	&:after {
+		background: linear-gradient(0deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+		content: '';
+		height: 100%;
+		position: absolute;
+			top: 0;
+			left: 0;
+		width: 100%;
+		z-index: 0;
+	}
+
+	@media (max-width: $large-max) {
+		height: 422px;
+		width: 100% !important;
+	}
+
+	@media (min-width: $xlarge-min) {
+		height: 422px;
+	}
+
+	> a {
+		display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-end;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.project-preview-institution,
+	.project-preview-title {
+		color: $white;
+		padding-right: ($spacer / 2);
+		padding-left: ($spacer + 3px);
+	}
+
+	.project-preview-institution {
+		line-height: $line-height-small;
+		margin-bottom: ($spacer / 4);
+	}
+
+	.project-preview-title {
+		font-style: italic;
+		line-height: $line-height-small;
+		margin-bottom: 0;
+		padding-bottom: ($spacer);
+	}
+}
+
+// Single project
 body.single-project {
 	.hero {
 		img {
@@ -23,6 +101,12 @@ body.single-project {
 
 		.h3 {
 			color: $white;
+			font-weight: $font-weight-bold;
+			margin-bottom: 0;
+		}
+
+		h1 {
+			font-style: italic;
 		}
 	}
 
@@ -51,6 +135,10 @@ body.single-project {
 					color: $gray-medium;
 					font-size: $font-size-small;
 					line-height: $default-heading-line-height;
+
+					@media (min-width: $large-min) {
+						padding-top: ($spacer / 4);
+					}
 
 					a {
 						color: $gray-medium;
