@@ -2,6 +2,12 @@
 /* Root
 /*-----------------------------------------------------------------------------------*/
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 :target:before {
 	@media (min-width: $large-min) {
 		content: '';

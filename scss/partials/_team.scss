@@ -89,3 +89,58 @@
 		margin-bottom: 0;
 	}
 }
+
+// Team modal
+.team-bio-content {
+	@media (min-width: $large-min) {
+		display: flex;
+	}
+}
+
+.team-photo {
+
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	@media (max-width: $medium-max) {
+		margin-bottom: ($spacer);
+	}
+
+	@media (min-width: $large-min) {
+		padding-right: ($spacer * 2);
+		width: 50%;
+	}
+}
+
+.team-bio {
+
+	.team-preview-title,
+	.team-preview-name {
+		display: block;
+	}
+
+	.team-preview-title {
+		color: $gray-medium;
+		line-height: $line-height-small;
+		margin-bottom: 3px;
+
+		@media (min-width: $large-min) {
+			margin-top: ($spacer / 4);
+		}
+	}
+
+	.team-preview-name {
+		margin-bottom: ($spacer);
+	}
+
+	@media (max-width: $medium-max) {
+		
+	}
+
+	@media (min-width: $large-min) {
+		width: 50%;
+	}
+}

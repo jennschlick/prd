@@ -1,0 +1,31 @@
+/*-----------------------------------------------------------------------------------*/
+/* Modaal
+/* https://humaan.com/modaal
+/*-----------------------------------------------------------------------------------*/
+
+.modaal-container {
+	border-radius: 2px;
+	max-width: 1000px;
+}
+
+.modaal-close {
+	&:focus,
+	&:hover {
+		&:before,
+		&:after {
+			background: $gray-dark;	
+		}
+	}
+}
+
+.modaal-overlay {
+	/* background: rgba(255, 255, 255, 1) !important; */
+}
+
+.modaal-gallery-control {
+	display: none !important;
+}
+
+.modaal-hidden {
+	display: none;
+}

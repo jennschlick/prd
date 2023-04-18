@@ -5,26 +5,23 @@
 // Normalize
 @import 'partials/normalize';
 
-// Reset
-@import 'partials/reset';
+// Fonts
+@import 'partials/fonts';
 
 // Variables
 @import 'partials/variables';
 
-// Mixins
-@import 'partials/mixins';
+// Helpers
+@import 'partials/helpers';
 
-// Editor
-@import 'partials/editor';
+// Root
+@import 'partials/root';
 
 // Grid
 @import 'partials/grid';
 
-// Fonts
-@import 'partials/fonts';
-
-// Root
-@import 'partials/root';
+// Editor
+@import 'partials/editor';
 
 // Components
 @import 'partials/breadcrumb';
@@ -34,8 +31,9 @@
 @import 'partials/menus';
 @import 'partials/typography';
 
-// Custom pages and posts
+// Pages
 @import 'partials/projects';
 @import 'partials/team';
 
 // Third-party libraries
+@import 'partials/modaal';

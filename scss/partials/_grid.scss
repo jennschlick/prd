@@ -32,6 +32,10 @@
 
 body.home {
 	.content {
+		@media (max-width: $medium-max) {
+			padding-top: ($spacer);
+		}
+
 		@media (min-width: $large-min) {
 			padding-top: ($spacer * 3);
 		}
