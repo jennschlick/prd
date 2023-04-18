@@ -2,8 +2,10 @@
 /* Styles
 /*-----------------------------------------------------------------------------------*/
 
-// Reset
+// Normalize
 @import 'partials/normalize';
+
+// Reset
 @import 'partials/reset';
 
 // Variables
@@ -35,3 +37,5 @@
 // Custom pages and posts
 @import 'partials/projects';
 @import 'partials/team';
+
+// Third-party libraries
