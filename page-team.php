@@ -18,36 +18,71 @@
 
 				<?php the_content(); ?>
 
-				<div class="team-grid">
-					<?php $args = array(  
-						'post_type' => 'team',
-						'post_status' => 'publish',
-						'posts_per_page' => -1, 
-						'orderby' => 'menu_order', 
-						'order' => 'ASC', 
-					);
-					$loop = new WP_Query( $args ); while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<!-- 				<p><a href="//staging.theprdgroup.com/wp-content/uploads/placeholder.png" data-modaal-type="image" class="modaal">Show image</a></p>
 
-						<div class="team-preview">
-							<?php if ( has_post_thumbnail() ): ?>
-								<div class="team-preview-photo">
-									<a href="#">
-										<?php the_post_thumbnail(); ?>
-									</a>
-								</div>
-							<?php endif; ?>
-							<?php if ( get_field( 'profile_title' )): ?>
-								<span class="label team-preview-title"><?php the_field( 'profile_title' ); ?></span>
-							<?php endif; ?>
-							<span class="h2 team-preview-name"><?php the_title(); ?></span>
-						</div>
+				<p><a href="#inline-content" data-modaal-type="inline" class="modaal">Show #1</a></p>
 
-					<?php endwhile; wp_reset_postdata(); ?>
+				<div id="inline-content" class="modaal-hidden">
+				    This is #1
+				</div>
+
+				<p><a href="#inline-content2" data-modaal-type="inline" class="modaal">Show #2</a></p>
+				
+				<div id="inline-content2" class="modaal-hidden">
+				    This is #2
+				 </div> -->
+
+				 <div class="team-grid">
+				 	<?php $args = array(  
+				 		'post_type' => 'team',
+				 		'post_status' => 'publish',
+				 		'posts_per_page' => -1, 
+				 		'orderby' => 'menu_order', 
+				 		'order' => 'ASC', 
+				 	);
+				 	$loop = new WP_Query( $args ); while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+				 	<div class="team-preview">
+				 		<?php if ( has_post_thumbnail() ): ?>
+				 			<div class="team-preview-photo">
+				 				<a href="#team-bio-<?php echo $post->ID; ?>" data-modaal-type="inline" class="modaal">
+				 					<?php the_post_thumbnail(); ?>
+				 				</a>
+				 			</div>
+				 		<?php endif; ?>
+				 		<?php if ( get_field( 'profile_title' )): ?>
+				 			<span class="label team-preview-title"><?php the_field( 'profile_title' ); ?></span>
+				 		<?php endif; ?>
+				 		<span class="h2 team-preview-name"><?php the_title(); ?></span>
+
+				 		<div id="team-bio-<?php echo $post->ID; ?>" class="modaal-hidden">
+				 			<div class="team-bio-content">
+					 			<?php if ( has_post_thumbnail() ): ?>
+					 				<div class="team-photo">
+					 					<?php the_post_thumbnail(); ?>
+					 				</div>
+					 			<?php endif; ?>
+
+					 			<div class="team-bio">
+						 			<?php if ( get_field( 'profile_title' )): ?>
+							 			<span class="label team-preview-title"><?php the_field( 'profile_title' ); ?></span>
+							 		<?php endif; ?>
+							 		<span class="h2 team-preview-name"><?php the_title(); ?></span>
+
+							 		<?php if ( get_field( 'profile_bio' )): ?>
+							 			<?php the_field( 'profile_bio' ); ?>
+							 		<?php endif; ?>
+							 	</div>
+						 	</div>
+				 		</div>
+				 	</div>
+
+				 <?php endwhile; wp_reset_postdata(); ?>
 				</div>
 			</div>
 		</div>
 
-<?php endwhile; ?>
+	<?php endwhile; ?>
 <?php else : ?>
 
 	<div id="top" class="content">
