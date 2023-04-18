@@ -363,6 +363,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/logo-no-fill.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/logo-no-fill.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -453,8 +463,8 @@
       "oA" : 0,
       "oAP" : "\/screenshot.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
@@ -550,6 +560,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/scss\/partials\/_helpers.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_helpers.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/scss\/partials\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -580,7 +605,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/scss\/partials\/_mixins.scss" : {
+    "\/scss\/partials\/_modaal.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -589,7 +614,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/scss\/partials\/_mixins.css",
+      "oAP" : "\/scss\/partials\/_modaal.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -620,21 +645,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/partials\/_projects.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/scss\/partials\/_reset.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/scss\/partials\/_reset.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
