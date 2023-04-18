@@ -8,7 +8,7 @@
 				<?php if ( $post->post_parent ) { ?>
 					<div class="breadcrumb">
 						<a href="<?php echo get_permalink( $post->post_parent ); ?>" class="link-underline link-cta">
-							<?php echo get_the_title( $post->post_parent ); ?>
+							Back to <?php echo get_the_title( $post->post_parent ); ?>
 						</a>
 					</div>
 				<?php } ?>
