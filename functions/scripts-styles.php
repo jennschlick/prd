@@ -10,7 +10,8 @@ function prd_styles_scripts() {
 
 	// Enqueue modal on the team page
 	if(is_page(11)) {
-		// wp_enqueue_script('avgrund', get_template_directory_uri() . '/js/avgrund.js', '', '1.0', true);
+		wp_enqueue_style( 'modaal-styles', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css' );
+		wp_enqueue_script( 'modaal-script', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js' );
 	}
 
 	// Enqueue scripts
