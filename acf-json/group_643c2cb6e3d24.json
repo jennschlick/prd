@@ -3,6 +3,26 @@
     "title": "Project Information",
     "fields": [
         {
+            "key": "field_643fc37cebe0a",
+            "label": "Featured:",
+            "name": "project_featured",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No",
+            "ui": 1
+        },
+        {
             "key": "field_643c308a99b72",
             "label": "Introduction:",
             "name": "project_introduction",
@@ -255,5 +275,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681724671
+    "modified": 1681900451
 }
