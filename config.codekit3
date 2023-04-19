@@ -73,6 +73,14 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
+    "\/blocks\/block-image-zoom.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/block-image-zoom.php",
+      "oF" : 0
+    },
     "\/blocks\/block-projects.php" : {
       "cB" : 0,
       "ft" : 8192,
