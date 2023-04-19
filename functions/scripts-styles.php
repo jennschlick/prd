@@ -8,11 +8,9 @@ function prd_styles_scripts() {
 	// Enqueue jQuery
 	wp_enqueue_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' );
 
-	// Enqueue modal on the team page
-	if(is_page(11)) {
-		wp_enqueue_style( 'modaal-styles', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css' );
-		wp_enqueue_script( 'modaal-script', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js' );
-	}
+	// Enqueue modal
+	wp_enqueue_style( 'modaal-styles', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css' );
+	wp_enqueue_script( 'modaal-script', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js' );
 
 	// Enqueue scripts
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js' );
