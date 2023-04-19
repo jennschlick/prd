@@ -64,6 +64,8 @@
 				padding: ($spacer / 2) 0;
 			}
 
+			&:active,
+			&:focus,
 			&:hover {
 				color: $orange;
 			}

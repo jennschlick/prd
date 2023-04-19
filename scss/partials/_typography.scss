@@ -62,10 +62,11 @@ a.link-underline {
 
 	&:after {
 		background-color: $orange-light;
+		border-radius: 1px;
 		content: '';
 		height: .7em;
 		position: absolute;
-			bottom: -.2em;
+			bottom: -.1em;
 			left: 0;
 		transition: all .3s cubic-bezier(0, 1, 0.5, 1);
 		width: 100%;
@@ -177,6 +178,6 @@ strong {
 
 .label {
 	font-size: $font-size-small;
-	/* font-weight: $font-weight-bold; */
+	font-weight: $font-weight-bold;
 	text-transform: uppercase;
 }

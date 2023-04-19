@@ -242,8 +242,9 @@ p,
 
 	&:before {
 		background-color: $orange-light;
+		border-radius: 1px;
 		content: '';
-		height: .7em;
+		height: .8em;
 		position: absolute;
 			bottom: 0;
 			left: 0;
@@ -257,7 +258,6 @@ p,
 
 		&:before {
 			background-color: $orange;
-			bottom: 0;
 			height: 1.6em;
 		}
 	}
@@ -738,7 +738,7 @@ p,
 			display: block;
 			font-size: $font-size-small;
 			font-style: normal;
-			line-height: $default-line-height;
+			line-height: $line-height-small;
 			text-transform: uppercase;
 		}
 	}
@@ -824,7 +824,7 @@ body.home {
 		display: block;
 		font-size: $font-size-small;
 		font-style: normal;
-		line-height: $default-line-height;
+		line-height: $line-height-small;
 		text-transform: uppercase;
 	}
 }

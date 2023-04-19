@@ -10,7 +10,6 @@
 		display: flex;
 			flex-flow: row wrap;
 			justify-content: space-between;
-
 	}
 }
 
@@ -81,8 +80,9 @@
 
 	.team-preview-title {
 		color: $gray-medium;
+		font-size: $font-size-small;
 		line-height: $line-height-small;
-		margin-bottom: 3px;
+		text-transform: uppercase;
 	}
 
 	.team-preview-name {
@@ -98,24 +98,23 @@
 }
 
 .team-photo {
-
 	img {
 		display: block;
 		height: auto;
 		width: 100%;
 	}
 
-	@media (max-width: $medium-max) {
-		margin-bottom: ($spacer);
-	}
-
 	@media (min-width: $large-min) {
-		padding-right: ($spacer * 2);
-		width: 50%;
+		width: 40%;
 	}
 }
 
 .team-bio {
+	padding: ($spacer * 2);
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
 
 	.team-preview-title,
 	.team-preview-name {
@@ -124,23 +123,22 @@
 
 	.team-preview-title {
 		color: $gray-medium;
+		font-size: $font-size-small;
 		line-height: $line-height-small;
-		margin-bottom: 3px;
-
-		@media (min-width: $large-min) {
-			margin-top: ($spacer / 4);
-		}
+		text-transform: uppercase;
 	}
 
 	.team-preview-name {
-		margin-bottom: ($spacer);
-	}
+		@media (max-width: $medium-max) {
+			margin-bottom: ($spacer / 2);
+		}
 
-	@media (max-width: $medium-max) {
-		
+		@media (min-width: $large-min) {
+			margin-bottom: ($spacer);
+		}
 	}
 
 	@media (min-width: $large-min) {
-		width: 50%;
+		width: 60%;
 	}
 }

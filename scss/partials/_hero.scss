@@ -43,10 +43,14 @@
 
 		@media (max-width: $medium-max) {
 			font-size: $font-size-large;
+			bottom: ($spacer);
+			left: ($spacer);
 		}
 
 		@media (min-width: $large-min) {
 			font-size: 90px;
+			bottom: ($spacer * 2);
+			left: ($spacer * 2);
 		}
 
 		span {

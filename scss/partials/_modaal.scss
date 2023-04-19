@@ -5,21 +5,74 @@
 
 .modaal-container {
 	border-radius: 2px;
-	max-width: 1000px;
-}
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	
+	@media (max-width: $medium-max) {
+		max-height: 80vh;
+		max-width: 90vw;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
 
-.modaal-close {
-	&:focus,
-	&:hover {
-		&:before,
-		&:after {
-			background: $gray-dark;	
-		}
+	@media (min-width: $large-min) {
+		max-width: 1000px;
 	}
 }
 
+.modaal-inner-wrapper {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.modaal-content-container {
+	padding: 0;
+}
+
 .modaal-overlay {
-	/* background: rgba(255, 255, 255, 1) !important; */
+	background: rgb(255, 255, 255) !important;
+}
+
+.modaal-close {
+	background: none;
+	border-radius: 0;
+	position: absolute;
+	z-index: 10 !important;
+
+	&:before,
+	&:after {
+		background: $gray-dark;
+		width: 3px;
+	}
+
+	&:focus,
+	&:hover {
+		background: none;
+
+		&:before,
+		&:after {
+			background: $orange;	
+		}
+	}
+
+	@media (max-width: $medium-max) {
+		top: 0;
+		right: 0;
+	}
+
+	@media (min-width: $large-min) {
+		top: ($spacer + 5px);
+		right: ($spacer);
+	}
+}
+
+.modaal-image {
+	.modaal-container {
+		
+	}
+
+	.modaal-close {
+		position: fixed;
+	}
 }
 
 .modaal-gallery-control {
@@ -29,3 +82,5 @@
 .modaal-hidden {
 	display: none;
 }
+
+.modaal-image {}

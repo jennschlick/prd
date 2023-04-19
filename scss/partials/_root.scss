@@ -29,7 +29,7 @@ body {
 body {
 	min-height: 100vh;
 
-	&.logged-in {
+	/* &.logged-in {
 		.header {
 			@media (min-width: 783px) {
 				top: 32px;
@@ -48,5 +48,5 @@ body {
 				top: 46px;
 			}
 		}
-	}
+	} */
 }
