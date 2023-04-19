@@ -10,7 +10,7 @@
 						<?php the_field( 'hero_heading' ); ?>
 					</div>
 				<?php endif; ?>
-				<video class="hero-video" autoplay loop muted>
+				<video class="hero-video" autoplay loop muted playsinline>
 				  <source src="<?php the_field( 'hero_media' ); ?>" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>

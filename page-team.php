@@ -18,20 +18,6 @@
 
 				<?php the_content(); ?>
 
-<!-- 				<p><a href="//staging.theprdgroup.com/wp-content/uploads/placeholder.png" data-modaal-type="image" class="modaal">Show image</a></p>
-
-				<p><a href="#inline-content" data-modaal-type="inline" class="modaal">Show #1</a></p>
-
-				<div id="inline-content" class="modaal-hidden">
-				    This is #1
-				</div>
-
-				<p><a href="#inline-content2" data-modaal-type="inline" class="modaal">Show #2</a></p>
-				
-				<div id="inline-content2" class="modaal-hidden">
-				    This is #2
-				 </div> -->
-
 				 <div class="team-grid">
 				 	<?php $args = array(  
 				 		'post_type' => 'team',
