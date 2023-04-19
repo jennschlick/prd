@@ -1,0 +1,1 @@
+<a href="<?php block_field( 'block-image-source' ); ?>" data-modaal-type="image" class="modaal"><img src="<?php block_field( 'block-image-source' ); ?>"></a>
