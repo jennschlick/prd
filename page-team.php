@@ -37,7 +37,7 @@
 				 			</div>
 				 		<?php endif; ?>
 				 		<?php if ( get_field( 'profile_title' )): ?>
-				 			<span class="label team-preview-title"><?php the_field( 'profile_title' ); ?></span>
+				 			<span class="team-preview-title"><?php the_field( 'profile_title' ); ?></span>
 				 		<?php endif; ?>
 				 		<span class="h2 team-preview-name"><?php the_title(); ?></span>
 
@@ -51,7 +51,7 @@
 
 					 			<div class="team-bio">
 						 			<?php if ( get_field( 'profile_title' )): ?>
-							 			<span class="label team-preview-title"><?php the_field( 'profile_title' ); ?></span>
+							 			<span class="team-preview-title"><?php the_field( 'profile_title' ); ?></span>
 							 		<?php endif; ?>
 							 		<span class="h2 team-preview-name"><?php the_title(); ?></span>
 
