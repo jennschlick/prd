@@ -1,4 +1,4 @@
-<div class="footer">
+<div class="footer" data-aos="fade-up" data-aos-delay="300">
 	<div class="wrapper">
 
 		<?php if (!is_page('contact')) : ?>
@@ -85,6 +85,19 @@
 </div>
 
 <?php wp_footer(); ?>
+
+<script>
+ AOS.init({
+   anchorPlacement: 'top-center',
+   delay: 100,
+   disable: 'mobile',
+   duration: 600,
+   easing: 'ease-out-cubic',
+   // offset: 200,
+   // once: false,
+   // mirror: true,
+ });
+</script>
 
 </body>
 </html>

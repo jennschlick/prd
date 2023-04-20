@@ -422,6 +422,17 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/js\/aos.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/aos-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/js\/scripts.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -477,6 +488,21 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/scss\/partials\/_aos.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/partials\/_aos.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
     },
     "\/scss\/partials\/_breadcrumb.scss" : {
       "aP" : 0,

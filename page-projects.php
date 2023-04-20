@@ -18,7 +18,7 @@
 
 				<?php the_content(); ?>
 
-				<div class="project-grid">
+				<div class="project-grid" data-aos="fade-up" data-aos-delay="600">
 					<?php $args = array(  
 						'post_type' => 'project',
 						'post_status' => 'publish',

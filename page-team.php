@@ -28,7 +28,7 @@
 				 	);
 				 	$loop = new WP_Query( $args ); while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-				 	<div class="team-preview">
+				 	<div class="team-preview" data-aos="fade-up">
 				 		<?php if ( has_post_thumbnail() ): ?>
 				 			<div class="team-preview-photo">
 				 				<a href="#team-bio-<?php echo $post->ID; ?>" data-modaal-type="inline" class="modaal">

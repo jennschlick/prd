@@ -6,7 +6,7 @@
 		<?php if ( get_field( 'hero_media' )): ?>
 			<div class="hero">
 				<?php if ( get_field( 'hero_heading' )): ?>
-					<div class="hero-heading">
+					<div class="hero-heading" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000">
 						<?php the_field( 'hero_heading' ); ?>
 					</div>
 				<?php endif; ?>

@@ -12,6 +12,9 @@ function prd_styles_scripts() {
 	wp_enqueue_style( 'modaal-styles', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css' );
 	wp_enqueue_script( 'modaal-script', '//cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js' );
 
+	// Enqueue scroll animation
+	wp_enqueue_script( 'aos-script', get_template_directory_uri() . '/js/aos.js' );
+
 	// Enqueue scripts
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js' );
 
