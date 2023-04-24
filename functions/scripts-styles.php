@@ -15,6 +15,12 @@ function prd_styles_scripts() {
 	// Enqueue scroll animation
 	wp_enqueue_script( 'aos-script', get_template_directory_uri() . '/js/aos.js' );
 
+	// Enqueue slider on the homepage
+	if(is_page(7)) {
+		wp_enqueue_style( 'slider-styles', '//unpkg.com/flickity@2/dist/flickity.min.css' );
+		wp_enqueue_script( 'slider-script', '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js' );
+	}
+
 	// Enqueue scripts
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js' );
 

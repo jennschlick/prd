@@ -1,0 +1,91 @@
+/*-----------------------------------------------------------------------------------*/
+/* Slider
+/*-----------------------------------------------------------------------------------*/
+
+body.home {
+	.slider-wrapper {
+		background: $orange;
+		color: $white;
+		margin-left: calc((100% - 100vw) / 2);
+		margin-bottom: ($spacer * 4);
+		overflow: hidden;
+		position: relative;
+		width: 100vw;
+
+		@media (max-width: $medium-max) {
+			padding-top: ($spacer * 3);
+			padding-bottom: ($spacer * 2);
+		}
+
+		@media (min-width: $large-min) {
+			padding-top: ($spacer * 5);
+			padding-bottom: ($spacer * 4);
+		}
+
+		&:before {
+			background: radial-gradient(circle, rgba($orange, 1) 0%, rgba($orange, 0) 50%);
+			background-repeat: no-repeat;
+			content: '';
+			height: 1000px;
+			mix-blend-mode: multiply;
+			opacity: .4;
+			position: absolute;
+			top: -500px;
+			left: -500px;
+			width: 1000px;
+			z-index: 0;
+		}
+
+		&:after {
+			background: radial-gradient(circle, rgba($orange, 1) 0%, rgba($orange, 0) 50%);
+			background-repeat: no-repeat;
+			content: '';
+			height: 1000px;
+			mix-blend-mode: multiply;
+			opacity: .4;
+			position: absolute;
+			bottom: -500px;
+			right: -500px;
+			width: 1000px;
+			z-index: 0;
+		}
+
+		.slider {
+			margin: 0 auto;
+			max-width: 900px;
+			padding-left: ($spacer);
+			padding-right: ($spacer);
+			position: relative;
+			z-index: 1;
+		}
+
+		blockquote {
+			p {
+				@media (max-width: $medium-max) {
+					margin-bottom: ($spacer);
+				}
+
+				@media (min-width: $large-min) {
+					margin-bottom: ($spacer * 2);
+				}
+			}
+		}
+
+		.wp-block-pullquote {
+			padding-bottom: ($spacer * 2);
+			width: 100%;
+		}
+
+		.flickity-viewport {
+			transition: height 0.2s;
+		}
+
+		.flickity-page-dots {
+			bottom: 0;
+
+			.dot {
+				background: $white;
+			}
+		}
+	}
+}
