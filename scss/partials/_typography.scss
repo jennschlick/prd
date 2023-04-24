@@ -55,32 +55,17 @@ a.link-cta {
 
 a.link-underline {
 	font-weight: $font-weight-bold;
-	padding-left: .3em;
-	padding-right: .3em;
-	position: relative;
+	text-shadow: 0 0 3px $white, 0 0 15px #ffbf4c;
 	transition: all .3s cubic-bezier(0, 1, 0.5, 1);
 
 	&:after {
-		background-color: $orange-light;
-		border-radius: 1px;
+		background: url('../img/icon-arrow-orange.svg') 0 0 no-repeat;
 		content: '';
-		height: .7em;
-		position: absolute;
-			bottom: -.1em;
-			left: 0;
+		display: inline-block;
+		height: 10px;
+		margin-left: ($spacer / 4);
 		transition: all .3s cubic-bezier(0, 1, 0.5, 1);
-		width: 100%;
-		z-index: -1;
-	}
-
-	&:hover {
-		color: $white;
-
-		&:after {
-			background-color: $orange;
-			bottom: -.2em;
-			height: 1.6em;
-		}
+		width: 10px;
 	}
 }
 
@@ -180,4 +165,51 @@ strong {
 	font-size: $font-size-small;
 	font-weight: $font-weight-bold;
 	text-transform: uppercase;
+}
+
+::marker {
+	display: none;
+}
+
+summary {
+	list-style: none;
+}
+
+details {
+	summary {
+		color: $orange;
+		cursor: pointer;
+		display: inline-block;
+		font-size: $font-size-small;
+		font-weight: $font-weight-bold;
+		padding: 0 0 ($spacer / 2) 0;
+		text-transform: uppercase;
+
+		&:after {
+			background: url('../img/icon-arrow-orange.svg') 0 0 no-repeat;
+			content: '';
+			display: inline-block;
+			height: 10px;
+			margin-left: ($spacer / 4);
+			transition: all .3s cubic-bezier(0, 1, 0.5, 1);
+			width: 10px;
+		}
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: ($spacer);
+
+		li {
+			/* margin-left: 0; */
+		}
+	}
+
+	&[open] {
+		summary {
+			&:after {
+				transform: rotate(90deg);
+			}
+		}
+	}
 }

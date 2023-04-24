@@ -57,13 +57,15 @@
 
 		img {
 			display: block;
+			filter: grayscale(100%);
 			height: auto;
 			position: relative;
-			transition: transform .7s cubic-bezier(0, 1, 0.5, 1);
+			transition: all .7s cubic-bezier(0, 1, 0.5, 1);
 			width: 100%;
 			z-index: 1;
 
 			&:hover {
+				filter: none;
 				transform: scale(1.02);
 			}
 		}

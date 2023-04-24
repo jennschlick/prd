@@ -139,128 +139,40 @@ p,
 	}
 }
 
+.has-background {
+	.wp-block-button__link {
+		text-shadow: none;
+	}
+}
+
 .has-blue-background-color,
 .has-gray-dark-background-color,
 .has-gray-medium-background-color,
 .has-orange-background-color {
 	.wp-block-button__link {
 		color: $white;
-		
-		&:before {
-			background-color: rgba(255, 255, 255, .2);
-		}
 
 		&:after {
 			background-image: url('../img/icon-arrow-light.svg');
 		}
 
 		&:hover {
-			&:before {
-				background-color: $white;
-			}
-		}
-	}
-}
-
-.has-blue-background-color {
-	.wp-block-button__link {
-		&:hover {
-			color: $blue;
-
-			&:after {
-				background-image: url('../img/icon-arrow-blue.svg');
-			}
-		}
-	}
-}
-
-.has-gray-dark-background-color,
-.has-gray-medium-background-color {
-	.wp-block-button__link {
-		&:hover {
-			color: $gray-dark;
-
-			&:after {
-				background-image: url('../img/icon-arrow-dark.svg');
-			}
-		}
-	}
-}
-
-.has-orange-background-color {
-	.wp-block-button__link {
-		&:hover {
-			color: $orange;
-
-			&:after {
-				background-image: url('../img/icon-arrow-orange.svg');
-			}
-		}
-	}
-}
-
-.has-blue-light-background-color {
-	.wp-block-button__link {
-		color: $blue;
-
-		&:before {
-			background-color: rgba(0, 151, 220, .1);
-		}
-
-		&:after {
-			background-image: url('../img/icon-arrow-blue.svg');
-		}
-
-		&:hover {
-			&:before {
-				background-color: $blue;
-			}
-		}
-	}
-}
-
-.has-orange-light-background-color {
-	.wp-block-button__link {
-		&:before {
-			background-color: rgba(247, 148, 29, .1);
+			color: $white;
 		}
 	}
 }
 
 // Block: Buttons
 .wp-block-button__link {
-	background-color: transparent;
+	background: transparent;
 	border-radius: 0;
 	color: $orange;
 	font-size: $font-size-small;
 	font-weight: $font-weight-bold;
-	padding: 0 ($spacer / 4) 0 .3em;
-	position: relative;
+	padding: 0;
+	text-shadow: 0 0 3px $white, 0 0 15px #ffbf4c;
 	text-transform: uppercase;
-	transition: all .3s cubic-bezier(0, 1, 0.5, 1);
 	z-index: 1;
-
-	&:before {
-		background-color: $orange-light;
-		border-radius: 1px;
-		content: '';
-		height: .8em;
-		position: absolute;
-			bottom: 0;
-			left: 0;
-		transition: all .3s cubic-bezier(0, 1, 0.5, 1);
-		width: 100%;
-		z-index: -1;
-	}
-
-	&:hover {
-		color: $white;
-
-		&:before {
-			background-color: $orange;
-			height: 1.6em;
-		}
-	}
 
 	&:after {
 		background: url('../img/icon-arrow-orange.svg') 0 0 no-repeat;
@@ -268,13 +180,8 @@ p,
 		display: inline-block;
 		height: 10px;
 		margin-left: ($spacer / 4);
+		transition: all .3s cubic-bezier(0, 1, 0.5, 1);
 		width: 10px;
-	}
-
-	&:hover {
-		&:after {
-			background-image: url('../img/icon-arrow-light.svg');
-		}
 	}
 }
 
@@ -562,6 +469,7 @@ p,
 		}
 
 		&.has-white-background-color {
+			background-color: transparent !important;
 			border-bottom-color: $white;
 
 			.wp-block-media-text__content {
