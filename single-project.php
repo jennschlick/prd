@@ -47,6 +47,18 @@
 								<?php if ( get_field( 'project_media_production_credit' )): ?>
 									<li><span class="label">Media production:</span> <?php the_field( 'project_media_production_credit' ); ?></li>
 								<?php endif; ?>
+
+								<?php if ( get_field( 'project_media_production_test' )): ?>
+									<li class="project-media-production"><span class="label">Media production (test):</span> <?php the_field( 'project_media_production_test' ); ?></li>
+								<?php endif; ?>
+
+								<?php if ( get_field( 'project_media_systems' )): ?>
+									<li><span class="label">Media systems:</span> <?php the_field( 'project_media_systems' ); ?></li>
+								<?php endif; ?>
+
+								<?php if ( get_field( 'project_architect' )): ?>
+									<li><span class="label">Architect:</span> <?php the_field( 'project_architect' ); ?></li>
+								<?php endif; ?>
 							</ul>
 							<div>
 								<?php if ( get_field( 'project_awards' )): ?>
