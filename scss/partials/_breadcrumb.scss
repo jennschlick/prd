@@ -16,10 +16,8 @@
 			width: 10px;
 		}
 
-		&:hover {
-			&:before {
-				background-image: url('../img/icon-arrow-light.svg');
-			}
+		&:after {
+			display: none !important;
 		}
 	}
 }
