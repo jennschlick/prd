@@ -197,6 +197,22 @@ body.single-project {
 								white-space: nowrap;
 							}
 
+							&.project-media-production {
+								display: block;
+
+								> ul {
+									display: block;
+									padding-inline-start: 20px;
+
+									> li {
+										display: list-item;
+										list-style-type: disc;
+										margin: 0 0 ($spacer / 2) 0;
+										padding: 0;
+									}
+								}
+							}
+
 							a {
 								&:hover {
 									svg {
