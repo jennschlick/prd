@@ -48,8 +48,8 @@
 									<li><span class="label">Media production:</span> <?php the_field( 'project_media_production_credit' ); ?></li>
 								<?php endif; ?>
 
-								<?php if ( get_field( 'project_media_production_test' )): ?>
-									<li class="project-media-production"><span class="label">Media production (test):</span> <?php the_field( 'project_media_production_test' ); ?></li>
+								<?php if ( get_field( 'project_media_production_credit_multiple' )): ?>
+									<li class="project-media-production"><span class="label">Media production:</span> <?php the_field( 'project_media_production_credit_multiple' ); ?></li>
 								<?php endif; ?>
 
 								<?php if ( get_field( 'project_media_systems' )): ?>

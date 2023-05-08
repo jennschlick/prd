@@ -198,7 +198,7 @@
         },
         {
             "key": "field_643c2d3971a78",
-            "label": "Media Production:",
+            "label": "Media Production (Single):",
             "name": "project_media_production_credit",
             "aria-label": "",
             "type": "text",
@@ -218,8 +218,8 @@
         },
         {
             "key": "field_645368f42791f",
-            "label": "Media Production (Test):",
-            "name": "project_media_production_test",
+            "label": "Media Production (Multiple):",
+            "name": "project_media_production_credit_multiple",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -335,5 +335,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683188016
+    "modified": 1683563468
 }
