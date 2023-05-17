@@ -49,7 +49,7 @@
 								<?php endif; ?>
 
 								<?php if ( get_field( 'project_media_production_credit_multiple' )): ?>
-									<li class="project-media-production"><span class="label">Media production:</span> <?php the_field( 'project_media_production_credit_multiple' ); ?></li>
+									<li class="project-meta-list"><span class="label">Media production:</span> <?php the_field( 'project_media_production_credit_multiple' ); ?></li>
 								<?php endif; ?>
 
 								<?php if ( get_field( 'project_media_systems' )): ?>
@@ -59,15 +59,13 @@
 								<?php if ( get_field( 'project_architect' )): ?>
 									<li><span class="label">Architect:</span> <?php the_field( 'project_architect' ); ?></li>
 								<?php endif; ?>
-							</ul>
-							<div>
 								<?php if ( get_field( 'project_awards' )): ?>
-									<div><span class="label">Awards:</span><?php the_field( 'project_awards' ); ?></div>
+									<li class="project-meta-list"><span class="label">Awards:</span><?php the_field( 'project_awards' ); ?></li>
 								<?php endif; ?>
 								<?php if ( get_field( 'project_press' )): ?>
-									<div><span class="label">Press:</span><?php the_field( 'project_press' ); ?></div>
+									<li class="project-meta-list"><span class="label">Press:</span><?php the_field( 'project_press' ); ?></li>
 								<?php endif; ?>
-							</div>
+							</ul>
 						</div>
 					</div>
 				</div>

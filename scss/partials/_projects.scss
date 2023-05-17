@@ -197,8 +197,17 @@ body.single-project {
 								white-space: nowrap;
 							}
 
-							&.project-media-production {
+							&.project-meta-list {
 								display: block;
+
+								.label {
+									display: block;
+									margin-bottom: ($spacer / 2);
+								}
+
+								> p {
+									margin-bottom: ($spacer / 2);
+								}
 
 								> ul {
 									display: block;
