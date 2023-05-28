@@ -21,7 +21,7 @@ function prd_custom_post_types() {
 	);
 	$args = array(
 		'labels' => $labels,
-		'public' => false,
+		'public' => true,
 		'publicly_queryable' => true,
 		'menu_icon' => 'dashicons-admin-page',
 		'show_ui' => true,
