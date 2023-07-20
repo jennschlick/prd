@@ -850,8 +850,8 @@
     "creationDate" : 605372885.79775703,
     "displayValue" : "PRD",
     "displayValueWasSetByUser" : 1,
-    "iconImageName" : "brackets-payne",
-    "iconImageWasSetByUser" : 0
+    "iconImageName" : "brackets-tar",
+    "iconImageWasSetByUser" : 1
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
