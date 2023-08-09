@@ -7,7 +7,7 @@
       "uuidString" : "3B681465-4BEE-4E0C-B049-04928AA6D711"
     }
   ],
-  "creatorBuild" : "34510",
+  "creatorBuild" : "34513",
   "files" : {
     "\/acf-json\/group_643ac6a9d4291.json" : {
       "ft" : 524288,
@@ -1745,9 +1745,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0
